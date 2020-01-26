@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+body{
+    font-family: 'Arimo', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#header{
+    border-bottom: 1px solid rgb(187, 178, 178);
+    min-height: 80px;
+    background: linear-gradient( rgba(255,255,255,1) 0%, rgba(237,252,255,1) 48%, rgba(203,247,255,1) 100%);
+}
+ul{
+    list-style-type: none;
+    height: auto;
+}
+#meni ul li{
+    display: inline;
+    font-size: 18px;
+    padding: 5% 2%;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color:darkblue;
+}
+#slajder img{
+    width: 100%;
+}
+#podMeniTelefonija, #podMeniKorisnickaPodrska{
+    position: absolute;
+    border: 1px solid rgb(187, 178, 178);
+    z-index: 10;
+    background-color: white;
+    padding: 3%;
+}
+#podMeniTelefonija li, #podMeniKorisnickaPodrska li{
+    line-height: 1.5;
+}
+#podMeni{
+    position: absolute;
+    border: 1px solid rgb(187, 178, 178);
+    z-index: 10;
+    left: 0;
+    background-color: white;
+    padding: 2.5%;
+}
+#podMeni > ul >li{
+    border-bottom: 1px solid rgb(187, 178, 178);
+}
+#podMeni ul > li> ul> li> a{
+    color: rgb(136, 134, 134);
+}
+#podMeni li{
+    font-size: 18px;
+    padding: 7px 0px;
+    line-height: 1.4;
+    display: block;
+}
+#searchDiv{
+    position: relative;
+}
+#search{
+    width: 95%;
+    height: 35px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: rgb(241, 240, 240);
+}
+#faSearch{
+    position: absolute;
+    z-index: 20;
+    right: 10px;
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    width: 15%;
+    height: 35px;
+    border: none;
+    background-color: lightblue;
+    color: darkblue;
+}
+#faSearch:hover{
+    background-color: darkblue;
+    color:lightblue;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.nevidljiv{
+    display: none;
+}
+.vidljiv{
+    display: block;
+}
+.red{
+    display: flex;
+}.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 15px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.MeniBar .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.MeniBar .bar2 {
+    opacity: 0;
+}
+.MeniBar .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.slajderSlika1,.slajderSlika2,.slajderSlika3{
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.slajderSlika1{
+    background-image: url(../images/note11.jpg);
+}
+.slajderSlika2{
+    background-image: url(../images/iphone11.jpg);
+    background-position: 20%;
+}
+.slajderSlika3{
+    background-image: url(../images/p30.jpg);
+}
+.strelicaLevo, .strelicaDesno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 70px;
+    width: 40px;
+    transition: 0.6s ease;
+}
+.strelicaDesno{
+    border-radius: 5px 0px 0px 5px;
+}
+.strelicaLevo{
+    border-radius: 0px 5px 5px 0px;
+}
+.strelicaDesno:hover{
+    color: white;
+    background-color: rgb(77, 77, 77);
+}
+.strelicaLevo:hover{
+    color: white;
+    background-color: rgb(77, 77, 77);
+}
+#slika1Tekst{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+#slika1Tekst a{
+    border-radius: 15px;
+    letter-spacing: 2px;
+    padding: 5px 12px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(228, 228, 228);
+}
+#slika1Tekst p{
+    margin: 20px 0px;
+    color: rgb(136, 134, 134);
+}
+#slika1Tekst a:hover{
+   background-color: rgb(77, 77, 77);
+   color: #fff;
+}
