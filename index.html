@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mobile shop</title>
+    <link rel="shortcut icon" href="images/icon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,15 +13,10 @@
 <body>
     <div id="header" class="container-fluid">
         <div class="row">
-            <div id="bars" class="col-5 d-lg-none pt-3 pl-4">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
             <div class="col-lg-3 col-4">
                 <a href="#"><img src="images/logo.png"></a>
             </div>
-            <div id="meni" class="col-lg-7 my-auto d-none d-lg-block">
+            <div id="meni" class="col-lg-9 my-auto d-none d-lg-block">
                 <ul>
                     <li><a href="#">Početna</a></li>
                     <li id="telefonija"><a href="#">Telefonija <i class="fas fa-angle-down"></i></a></li>
@@ -29,18 +25,21 @@
                     <li><a href="#">Kontakt</a></li>
                 </ul>
             </div>
-            <div id="searchDiv" class="col-3 col-lg-2 my-auto d-none d-md-block">
-                <input id="search" type="text" placeholder="Pretražite...">
-                <button  id="faSearch"><i class="fas fa-search"></i></button>
+            <div class="col-8 d-lg-none">
+                <div id="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div id="podMeni" class="col-sm-5 col-8 d-lg-none nevidljiv">
+            <div id="podMeni" class="col-12 d-lg-none nevidljiv">
                 <ul>
                     <li><a href="#">Početna</a></li>
-                    <li><a href="#" class="flex">Telefonija<i class="fas fa-angle-down"></i></a>
+                    <li><a href="#">Telefonija <i class="fas fa-angle-down"></i></a>
                         <ul class="nevidljiv pl-3">
-                            <li><a href="#" class="flex">Šta je novo <i class="fas fa-angle-down"></i></a>
+                            <li><a href="#">Šta je novo <i class="fas fa-angle-down"></i></a>
                                 <ul class="nevidljiv pl-4">
                                     <li><a href="#">Samsung Galaxy Note10+</a></li>
                                     <li><a href="#">Samsung Galaxy S10+</a></li>
@@ -50,13 +49,13 @@
                                     <li><a href="#">iPhone 11</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="flex">Mobilni telefoni <i class="fas fa-angle-down"></i></a>
+                            <li><a href="#">Mobilni telefoni <i class="fas fa-angle-down"></i></a>
                                 <ul class="nevidljiv pl-4">
                                     <li><a href="#">Smart telefoni</a></li>
                                     <li><a href="#">Dodatna oprema</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="flex">Tablet računari <i class="fas fa-angle-down"></i></a>
+                            <li><a href="#">Tablet računari <i class="fas fa-angle-down"></i></a>
                                 <ul class="nevidljiv pl-4">
                                     <li><a href="#">Tableti</a></li>
                                     <li><a href="#">Dodatna oprema za tablete</a></li>
@@ -64,16 +63,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="korisnickaPodrska"><a href="#" class="flex">Korisnicka podrška <i class="fas fa-angle-down"></i></a>
+                    <li id="korisnickaPodrska"><a href="#">Korisnicka podrška <i class="fas fa-angle-down"></i></a>
                         <ul class="nevidljiv pl-3">
-                            <li><a href="#" class="flex">Informacije <i class="fas fa-angle-down"></i></a>
+                            <li><a href="#">Informacije <i class="fas fa-angle-down"></i></a>
                                 <ul class="nevidljiv pl-4">
                                     <li><a href="#">FAQ</a></li>
                                     <li><a href="#">Garancije</a></li>
                                     <li><a href="#">Novosti i upozorenja</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="flex">Moj servis <i class="fas fa-angle-down"></i></a>
+                            <li><a href="#">Moj servis <i class="fas fa-angle-down"></i></a>
                                 <ul class="nevidljiv pl-4">
                                     <li><a href="#">Zatražite servis</a></li>
                                 </ul>
@@ -135,31 +134,72 @@
             </div>
         </div>
     </div>
-    <div id="slajder" class="container-fluid">
+    <div id="slajderKontejner" class="container-fluid">
         <div class="row">
-            <div class="col-12 slajderSlika1 vidljiv">
-                <div class="flex">
-                    <div class="strelicaLevo"><i class="fas fa-chevron-left"></i></div>
-                    <div id="slika1Tekst" class="col-10 col-lg-5">
+            <div class="strelicaLevo"><i class="fas fa-chevron-left"></i></div>
+            <div id="slajder">
+                <div class="col-12 slajderSlika1 vidljiv">
+                    <img src="images/samsungS10LiteNote10lite.jpg"/>
+                    <div class="col-10 col-md-7 col-lg-5 slikaTekst" id="pozicijaPrvogTeksta">
                         <h1>Moćni za 10</h1>
-                        <p>Prigrli moć stvaranja sa Galaxy Note10. Slikaj kao profesionalac, uređuj u pokretu, pravi beleške i to uradi na svoj način.</p>
+                        <p>Prigrli moć stvaranja sa Galaxy Note10.</p>
                         <a href="#">Saznaj više</a>
                     </div>
-                    <div class="strelicaDesno"><i class="fas fa-chevron-right"></i></div>
+                    
+                </div>
+                <div class="col-12 slajderSlika2 nevidljiv">
+                    <img src="images/samsungS10.png"/>
+                    
+                    <div class="col-12 slikaTekst" id="pozicijaDrugogTeksta">
+                        <h1>Stigla je nova Galaxy generacija.</h1>
+                        <a href="#">Saznaj više</a>
+                    </div>
+                    
+                </div>
+                <div class="col-12 slajderSlika3 nevidljiv">
+                    <img src="images/p30Pro.jpg"/>
+                    
+                    <div class="col-10 col-md-7 col-lg-5 slikaTekst" id="pozicijaTrecegTeksta">
+                        <h1>HUAWEI P30 Pro Postavljanje novih standarda.</h1>
+                        <a href="#">Saznaj više</a>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="col-12 slajderSlika2 nevidljiv">
-                <div class="flex">
-                    <div class="strelicaLevo"><i class="fas fa-chevron-left"></i></div>
-                    <div></div>
-                    <div class="strelicaDesno"><i class="fas fa-chevron-right"></i></div>
-                </div>
+            <div class="strelicaDesno"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </div>
+    <div class="container-fluid" id="containerSadrzaj">
+        <div class="row">
+            <div class="col-12" id="najnovijeNajpopularnije">
+                <a href="#"><h2 class="aktivan">Najpopularnije</h2></a><a href="#"><h2>Najnovije</h2></a>
             </div>
-            <div class="col-12 slajderSlika3 nevidljiv">
-                <div class="flex">
-                    <div class="strelicaLevo"><i class="fas fa-chevron-left"></i></div>
-                    <div></div>
-                    <div class="strelicaDesno"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="row flex" id="sadrzaj">
+            <div class="col-lg-5 col-11 flex2 velikiBlok">
+                <img src="images/samsungTabS6.webp"/>
+                <h3>Samsung Galaxy Tab S6</h3>
+            </div>
+            <div class="col-lg-6">
+                <div class="flex prviRed">
+                    <div class="col-5 maliBlok">
+                        <img src="images/note10+.png"/>
+                        <h3>Samsung Galaxy Note10+</h3>
+                    </div>
+                    <div class="col-5 maliBlok">
+                        <img src="images/samsungA50.webp"/>
+                        <h3>Samsung Galaxy A50</h3>
+                    </div>
+                </div>
+                <div class="flex drugiRed">
+                    <div class="col-5 maliBlok">
+                        <img src="images/mate20.png"/>
+                        <h3>Huawei Mate20</h3>
+                    </div>
+                    <div class="col-5 maliBlok">
+                        <img src="images/iphoneXS.png"/>
+                        <h3>Apple iPhone XS</h3>
+                    </div>
                 </div>
             </div>
         </div>
