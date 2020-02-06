@@ -52,5 +52,20 @@ $(document).ready(function(){
     })
     }
     
-    
+    function prikaziSaznajVise(blok){
+        $(blok).hover(function(){
+            $(this).find("a").fadeIn();
+            $(this).find("img").animate({"opacity": 0.5}, "slow");
+            $(this).find("h3").animate({"opacity": 0.5}, "slow");
+        },function(){
+            $(this).find("a").fadeOut();
+            $(this).find("img").animate({"opacity": 1}, "slow");
+            $(this).find("h3").animate({"opacity":1}, "slow");
+        });
+    }
+    var velikiBlok=$(".velikiBlok");
+    var maliBlok=$(".maliBlok");
+    prikaziSaznajVise(velikiBlok);
+    prikaziSaznajVise(maliBlok)
+
 });
