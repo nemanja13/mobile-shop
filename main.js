@@ -54,18 +54,30 @@ $(document).ready(function(){
     
     function prikaziSaznajVise(blok){
         $(blok).hover(function(){
-            $(this).find("a").fadeIn();
-            $(this).find("img").animate({"opacity": 0.5}, "slow");
-            $(this).find("h3").animate({"opacity": 0.5}, "slow");
+            $(this).find("a").stop(true, true).fadeIn();
+            $(this).find("img").stop(true, true).animate({"opacity": 0.5}, "slow");
+            $(this).find("h3").stop(true, true).animate({"opacity": 0.5}, "slow");
+            $(this).stop(true, true).css({"boxShadow" : "5px 5px 10px 5px #c2c2c2", "transition" : "box-shadow 1s"})
         },function(){
-            $(this).find("a").fadeOut();
-            $(this).find("img").animate({"opacity": 1}, "slow");
-            $(this).find("h3").animate({"opacity":1}, "slow");
+            $(this).find("a").stop(true, true).fadeOut();
+            $(this).find("img").stop(true, true).animate({"opacity": 1}, "slow");
+            $(this).find("h3").stop(true, true).animate({"opacity": 1}, "slow");
+            $(this).stop(true, true).css({"boxShadow" : "none"})
         });
     }
     var velikiBlok=$(".velikiBlok");
     var maliBlok=$(".maliBlok");
     prikaziSaznajVise(velikiBlok);
-    prikaziSaznajVise(maliBlok)
+    prikaziSaznajVise(maliBlok);
 
+    function focus(input){
+        $(input).focus(function(){
+            $(this).prev().css("color",  "rgb(115, 164, 255)");
+        });
+        $(input).blur(function(){
+            $(this).prev().css("color",  "rgb(0, 0, 0)");
+        });
+    }
+    focus($("input"));
+    focus($("textarea"));
 });

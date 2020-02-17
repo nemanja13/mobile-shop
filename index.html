@@ -21,8 +21,8 @@
                     <li><a href="#">Početna</a></li>
                     <li id="telefonija"><a href="#">Telefonija <i class="fas fa-angle-down"></i></a></li>
                     <li id="korisnickaPodrska"><a href="#">Korisnicka podrška <i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#">O nama</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#oNama">O nama</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </div>
             <div class="col-8 d-lg-none">
@@ -175,14 +175,14 @@
                 <a href="#"><h2 class="aktivan">Najpopularnije</h2></a><a href="#"><h2>Najnovije</h2></a>
             </div>
         </div>
-        <div class="row flex" id="sadrzaj">
+        <div class="row flex3" id="sadrzaj">
             <div class="col-lg-5 col-11 flex2 velikiBlok">
                 <img src="images/samsungTabS6.webp"/>
                 <h3>Samsung Galaxy Tab S6</h3>
                 <a href="#" class="nevidljiv">Saznaj više</a>
             </div>
             <div class="col-lg-6">
-                <div class="flex prviRed">
+                <div class="flex3 prviRed">
                     <div class="col-5 maliBlok flex2">
                         <img src="images/note10+.png"/>
                         <h3>Samsung Galaxy Note10+</h3>
@@ -194,7 +194,7 @@
                         <a href="#" class="nevidljiv">Saznaj više</a>
                     </div>
                 </div>
-                <div class="flex drugiRed">
+                <div class="flex3 drugiRed">
                     <div class="col-5 maliBlok flex2">
                         <img src="images/mate20.png"/>
                         <h3>Huawei Mate20</h3>
@@ -205,6 +205,117 @@
                         <h3>Apple iPhone XS</h3>
                         <a href="#" class="nevidljiv">Saznaj više</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="kompanija">
+    </div>
+    <div class="container-fluid" id="oNama">
+        <h2 class="podnaslov">O nama</h2>
+        <div class="row flex3">
+            <div class="col-10 col-md-3 blokONama">
+                <img src="images/vizijaMala.jpg"/>
+                <div>
+                    <h3>Vizija</h3>
+                    <p>Vizija kompanije Mobile shop je da pruži najviši nivo usluge na domaćem tržištu uz stalne inovacije i obogaćivanje proizvodnog asortimana.</p>
+                </div>
+            </div>
+            <div class="col-10 col-md-3 blokONama">
+                <img src="images/kompanijaMala.jpg"/>
+                <div>
+                    <h3>Kompanija</h3>
+                    <p>Od svog osnivanja 2005. godine, kompanija Mobile shop je jedan od lidera na tržištu tehnike u Srbiji.</p>
+                </div> 
+            </div>
+            <div class="col-10 col-md-3 blokONama">
+                <img src="images/callCentarMala.jpg"/>
+                <div>
+                    <h3>Maloprodajna mreža</h3>
+                    <p>Mobile shop maloprodajna mreža pokriva preko 25 gradova širom Srbije. Mobile shop ima i Call Centar koji je na raspolaganju kupcima.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="kontakt">
+        <h2 class="podnaslov">Kontaktirajte Nas</h2>
+        <div class="row flex">       
+            <div class="col-12 col-md-5 blokKontakt">
+                <h3><i class="fas fa-desktop"></i> Kontaktirajte nas putem e-maila</h3>
+                <form id="formaKontakt" action="#" method="POST">
+                    <label for="imePrezime">Ime i prezime</label>
+                    <input type="text" id="imePrezime" name="imePrezime"/>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email"/>
+                    <label for="telefon">Telefon</label>
+                    <input type="text" id="telefon" name="telefon"/>
+                    <label for="razlogKontakta">Razlog kontakta</label>
+                    <select id="razlog" name="razlog">
+                        <option value="0">Izaberite</option>
+                        <option value="1">Prodaja</option>
+                        <option value="2">Isporuka robe</option>
+                        <option value="3">Reklamacije</option>
+                        <option value="4">Vaše primedbe i sugestije</option>
+                        <option value="5">Ostala pitanja</option>
+                    </select>
+                    <label for="poruka">Poruka</label>
+                    <textarea id="poruka"></textarea>
+                    <input type="submit" value="Pošalji"/>
+                </form>
+            </div>
+            <div class="col-12 col-md-5 flex2 blokKontakt">
+                <div class="col-6">
+                    <h3><i class="fas fa-phone"></i> Pozovite</h3>
+                    <p>+38111 753 22 55</p>
+                    <p>+38111 753 22 66</p>
+                    <h4>Opšta podrška</h4>
+                    <p>Ponedeljak - Petak : 09h do 18h</p>
+                </div>
+                <div class="col-6">
+                    <h3><i class="fas fa-map-marker-alt"></i>  Lokacija</h3>
+                    <h4>Adresa:</h4>
+                    <p>Nemanjina 10</p>
+                    <h4>Servis Lokacije</h4>
+                    <p>Kneza Milana Obrenovića 14</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.7511505001744!2d20.457362115498128!3d44.806259879098754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa848ddc625%3A0x36e7d5f2cd3e83eb!2z0J3QtdC80LDRmtC40L3QsCAxMCwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1581967024124!5m2!1ssr!2srs" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="container-fluid" id="footer">
+        <div class="row flex3">
+            <div class="col-sm-4 col-md-3 mt-4">
+                <h4>Proizvod i usluga</h4>
+                <ul>
+                    <li><a href="#">Smart telefoni</a></li>
+                    <li><a href="#">Dodatna oprema</a></li>
+                    <li><a href="#">Tableti</a></li>
+                    <li><a href="#">Dodatna oprema za tablete</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 mt-4">
+                <h4>Korisnicka podrška</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Garancije</a></li>
+                    <li><a href="#">Novosti i upozorenja</a></li>
+                    <li><a href="#">Zatražite servis</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 mt-4">
+                <h4>O nama</h4>
+                <ul>
+                    <li><a href="#kontakt">Kontaktirajte nas</a></li>
+                    <li><a href="#oNama">O nama</a></li>
+                    <li>Pratite nas:</li>
+                </ul>
+                <div id="socMreze">
+                    <a href=${facebook}><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href=${instagram} class="ml-4"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href=${twitter} class="ml-4"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href=${youtube} class="ml-4"><i class="fab fa-youtube fa-lg"></i></a>
                 </div>
             </div>
         </div>

@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap');
+@keyframes slajder {
+    0%   { right:-100%; top:0px;}
+    100% { right:0px; top:0px;}
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 h1,h2{
     font-family: 'Raleway', sans-serif;
@@ -68,13 +76,16 @@ ul li a:hover{
 #podMeni a{
     display: block;
 }
-.flex, .flex2{
+.flex, .flex2, .flex3{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .flex2{
     flex-direction: column;
+}
+.flex3{
+    justify-content: space-around;
 }
 p{
     font-size: 20px;
@@ -118,6 +129,10 @@ p{
 }
 #slajder img{
     max-height: 88vh;
+}
+.slajderSlika1, .slajderSlika2, .slajderSlika3{
+    animation-name: slajder;
+    animation-duration: 1s;
 }
 .strelicaLevo, .strelicaDesno{
     position: absolute;
@@ -204,6 +219,7 @@ p{
 }
 #sadrzaj{
     margin-top: 25px;
+    justify-content: space-around;
 }
 #sadrzaj h3{
     text-align: center;
@@ -225,6 +241,100 @@ p{
     position: absolute;
     top: 45%;
 }
+#kompanija{
+    margin: 20px 0px;
+    background-image: url(../images/kompanija.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.podnaslov{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 35px;
+}
+.blokONama{
+    border: 1px solid rgb(187, 178, 178, 0.5);
+    transition: box-shadow 1s;
+    min-height: 400px;
+    margin: 20px 0px;
+}
+.blokONama img{
+    width: 100%;
+}
+.blokONama:hover{
+    box-shadow : 5px 5px 10px 5px #c2c2c2;
+}
+.blokONama>div{
+    padding: 10px;
+}
+.blokONama p, .blokKontakt p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+#formaKontakt label, input, textarea{
+    float: left;
+    width: 100%;
+}
+label{
+    margin: 5px 0px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    height: 30px;
+}
+textarea{
+    resize: none;
+    height: 80px;
+}
+input[type=submit]{
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(115, 164, 255);
+    color: rgb(115, 164, 255);
+    margin-top: 5px;
+    background-color: #fff;
+}
+input[type=submit]:hover{
+    background-color: rgb(115, 164, 255);
+    color: #fff;
+}
+#razlog{
+    height: 35px;
+}
+.blokKontakt{
+    min-height: 480px;
+    padding: 10px;
+}
+.blokKontakt h3{
+    margin: 10px 0px;
+}
+#mapa{
+    padding: 0px;
+}
+#mapa iframe{
+    width: 100%;
+    height: 300px;
+}
+#footer{
+    background-color: rgba(216, 216, 216, 0.5);
+    padding: 30px;
+}
+#footer ul li{
+    font-size: 14px;
+    line-height: 1.8;
+}
+#socMreze a{
+    margin-top: 10px;
+}
+#socMreze a:hover{
+    color: rgb(115, 164, 255);
+}
 @media screen and (max-width : 991px){
     .velikiBlok{
         margin: 0px auto;
@@ -236,11 +346,13 @@ p{
     .prviRed{
         margin-top: 20px;
     }
-    #sadrzaj .flex{
+    .blokKontakt:last-child{
+        flex-direction: row;
         justify-content: space-around;
     }
-
-
+    .blokKontakt{
+        min-height: 300px;
+    }
 }
 @media screen and (max-width : 600px){
     .velikiBlok>img{
