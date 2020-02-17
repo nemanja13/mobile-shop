@@ -123,6 +123,7 @@ p{
 }
 #slajder{
     width: 100%;
+    overflow: hidden;
 }
 #slajderKontejner{
     position: relative;
