@@ -1,0 +1,464 @@
+[
+    {
+        "id": 1,
+        "marka": "Samsung",
+        "model": "Galaxy Tab S6",
+        "tip": "tablet",
+        "dimenzije": "159,5 mm x 244,5 mm x 5,7 mm",
+        "tezina": "420 g",
+        "ekran": "10,5\" Super AMOLED",
+        "rezolucija": "2560 x 1600 px",
+        "procesor": "64-bit Octa-core procesor",
+        "baterija": "7040 mAh",
+        "kamera":{
+            "zadnja": "13 MP + 5 MP",
+            "prednja": "8 MP"
+        },
+        "internaMemorija": "128 GB",
+        "operativniSistem": "Android",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "NFC", "GPS"
+        ],
+        "boja":"Plava",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "v5.0 (LE do 2 Mbps)",
+        "wifi": "Wi-Fi Direct 802.11 a/b/g/n/ac 2.4G+5GHz, VHT80 MU-MIMO",
+        "ramMemorija": "6 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Podrška za S olovku - daljinsko upravljanje"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyTabS6.webp"
+        },
+        "cena": 85.990,
+        "najpopularniji" : true,
+        "najnoviji" : false
+    },
+    {
+        "id": 2,
+        "marka": "Samsung",
+        "model": "Galaxy A50",
+        "tip": "telefon",
+        "dimenzije": "158.5 mm x 74.7 mm x 7.7 mm",
+        "tezina": "166 g",
+        "ekran": "6,4\" Super AMOLED",
+        "rezolucija": "1080 x 2340 px",
+        "procesor": "Octa-core (4x2.3 GHz Cortex-A73 & 4x1.7 GHz Cortex-A53)",
+        "baterija": "Li-Po 4000 mAh",
+        "kamera":{
+            "zadnja": "25 MP + 8 MP + 5 MP",
+            "prednja": "25 MP"
+        },
+        "internaMemorija": "128 GB",
+        "operativniSistem": "Android 9.0 (Pie)",
+        "povezivanje":[
+            "NFC", "GPS"
+        ],
+        "boja":"Plava",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "5.0, A2DP, LE",
+        "wifi": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, WiFi Direct, hotspot",
+        "ramMemorija": "4 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Dual sim"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyA50.webp"
+        },
+        "cena": 34.990,
+        "najpopularniji" : true,
+        "najnoviji" : false
+    },
+    {
+        "id": 3,
+        "marka": "Huawei",
+        "model": "Mate 20",
+        "tip": "telefon",
+        "dimenzije": "157.8 X 72.3 X 8.6 mm",
+        "tezina": "189 g",
+        "ekran": "6,4\" OLED",
+        "rezolucija": "3120 x 1440",
+        "procesor": "ARM Octa Core (2 x Cortex-A76 2,6 GHz + 2 x Cortex-A76 1,92 GHz + 4 x Cortex-A55 1,8 GHz)",
+        "baterija": "4200 mAh",
+        "kamera":{
+            "zadnja": "40.0 Mpix + 20.0 Mpix + 8.0 Mpix",
+            "prednja": "24.0 Mpix"
+        },
+        "internaMemorija": "128 GB",
+        "operativniSistem": "Android 9.0 (Pie)",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "NFC", "GPS"
+        ],
+        "boja":"Plava",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "v5.0",
+        "wifi": "Wi-Fi 802.11 a/b/g/n/ac, Dual-Band, WiFI Hotspot, WiFi Direct, 2x2 MIMO",
+        "ramMemorija": "6 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Dual sim", "Brzo punjenje", "Senzori: Otisak prsta (na displeju), akcelerometar, žiroskop, blizina, kompas, ANT +"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/mate20.png"
+        },
+        "cena": 74.990,
+        "najpopularniji" : true,
+        "najnoviji" : false
+    },
+    {
+        "id": 4,
+        "marka": "Apple",
+        "model": "Iphone XS",
+        "tip": "telefon",
+        "dimenzije": "143.6 mm • 70.9 mm • 7.7 mm",
+        "tezina": "177 g",
+        "ekran": "5,8\" Super Retina HD",
+        "rezolucija": "2436 x 1125 piksela",
+        "procesor": "Hexa-core (2x2.5 GHz Vortex + 4x1.6 GHz Tempest)",
+        "baterija": "2658 mAh",
+        "kamera":{
+            "zadnja": "12 MP + 12 MP",
+            "prednja": "7 MP"
+        },
+        "internaMemorija": "64 GB",
+        "operativniSistem": "iOS 12",
+        "povezivanje":[
+            "NFC", "GPS"
+        ],
+        "boja":"Gold",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Ne",
+        "bluetooth": "v5.0",
+        "wifi": "Wi-Fi 802.11 a/b/g/n/ac, Dual-Band, WiFI Hotspot, WiFi Direct, 2x2 MIMO",
+        "ramMemorija": "4 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Vodootpornost : Sertifikat IP68"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/iphoneXS.png"
+        },
+        "cena": 89.990,
+        "najpopularniji" : true,
+        "najnoviji" : true
+    },
+    {
+        "id": 5,
+        "marka": "Samsung",
+        "model": "Galaxy S20 Ultra",
+        "tip": "telefon",
+        "dimenzije": "166,9 mm x 76 mm x 8,8 mm",
+        "tezina": "220 g",
+        "ekran": "6,9\" Quad HD+ Dynamic AMOLED 2x Infinity-O display 3200 x 1440 px HDR10+ sertifikat 120 Hz displej",
+        "rezolucija": "3200 x 1440 px (Quad HD+)",
+        "procesor": "7 nm Octa Core 2,73 GHz maksimalna brzina + 2,5 GHz + 2 GHz",
+        "baterija": "5000 mAh",
+        "kamera":{
+            "zadnja": "108 MP + 12 MP + 48 MP + VGA",
+            "prednja": "40 MP"
+        },
+        "internaMemorija": "128 GB",
+        "operativniSistem": "Android 10",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "NFC", "GPS", "Smart Switch (PC verzija)"
+        ],
+        "boja":"Kosmičko crna",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "5.0",
+        "wifi": "802.11 a/b/g/n/ac/ax 2,4 GHz + 5 GHz, HE80, MIMO, Wi-Fi Direct",
+        "ramMemorija": "12 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Dual sim", "Brzo punjenje", "Senzori: Akcelerometar, barometar, senzor otiska prsta, žiroskopski senzor, geomagnetni senzor, Hall senzor, RGB senzor svetla, senzor blizine Opcije zaključavanja: Šablon, PIN, lozinka"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyS20Ultra.webp"
+        },
+        "cena": 166.990,
+        "najpopularniji" : false,
+        "najnoviji" : true
+    },
+    {
+        "id": 6,
+        "marka": "Samsung",
+        "model": "Galaxy S10 Lite",
+        "tip": "telefon",
+        "dimenzije": "75,6 mm x 162,5 mm x 8,1 mm",
+        "tezina": "186 g",
+        "ekran": "6,6\" Super AMOLED Plus",
+        "rezolucija": "1080 x 2400 px, FHD+",
+        "procesor": "Octa Core Brzina: 2,8 GHz, 2,4 GHz, 1,7 GHz",
+        "baterija": "4500 mAh",
+        "kamera":{
+            "zadnja": "48 MP + 12 MP + 5 MP",
+            "prednja": "32 MP"
+        },
+        "internaMemorija": "128 GB",
+        "operativniSistem": "Android",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "USB 2.0", "NFC", "GPS", "Smart Switch (PC verzija)"
+        ],
+        "boja":"Prizma bela",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "5.0",
+        "wifi": "802.11 a/b/g/n/ac 2,4 G + 5 GHz, VHT80",
+        "ramMemorija": "8 GB",
+        "mreze": [
+            "2G GSM", "3G UMTS", "4G TDD LTE", "4G FDD LTE"
+        ],
+        "ostalo":[
+            "Dual sim", "Senzori: Akcelerometar, senzor otiska prsta, žiroskopski senzor, geomagnetski senzor, Hall senzor, RGB senzor svetla, senzor blizine"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyS10Lite.webp"
+        },
+        "cena": 81.990,
+        "najpopularniji" : false,
+        "najnoviji" : false
+    },
+    {
+        "id": 7,
+        "marka": "Samsung",
+        "model": "Galaxy A71",
+        "tip": "telefon",
+        "dimenzije": "76 mm x 163,6 mm x 7,7 mm",
+        "tezina": "179 g",
+        "ekran": "6,7\" 76 mm x 163,6 mm x 7,7 mm",
+        "rezolucija": "1080 x 2400 px (FHD+)",
+        "procesor": "64-bit Octa-core procesor",
+        "baterija": "4500 mAh",
+        "kamera":{
+            "zadnja": "64 MP + 12 MP + 5 MP + 5 MP",
+            "prednja": "32 MP"
+        },
+        "internaMemorija": "128 GB",
+        "operativniSistem": "Android",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "NFC", "GPS"
+        ],
+        "boja":"Siva",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "5.0",
+        "wifi": "802.11 a/b/g/n/ac",
+        "ramMemorija": "6 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Dual sim", "Brzo punjenje", "Senzori: Brzinomer, senzor otiska prstiju, žiroskop, geo magnetski senzor, senzor prostora, RGB senzor svetla, senzor blizine"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyA71.png"
+        },
+        "cena": 56.990,
+        "najpopularniji" : false,
+        "najnoviji" : false
+    },
+    {
+        "id": 8,
+        "marka": "Samsung",
+        "model": "Galaxy Note10+",
+        "tip": "telefon",
+        "dimenzije": "77,2 mm x 162,3 mm x 7,9 mm",
+        "tezina": "196 g",
+        "ekran": "6,8\" Dynamic AMOLED Infinity-O displej",
+        "rezolucija": "3040 ×1440 px",
+        "procesor": "64-bit Octa-core procesor",
+        "baterija": "4300 mAh",
+        "kamera":{
+            "zadnja": "16 Mpix + 12 Mpix + 12 Mpix",
+            "prednja": "10 Mpix"
+        },
+        "internaMemorija": "256 GB",
+        "operativniSistem": "Android 9.0 (Pie)",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "NFC", "GPS"
+        ],
+        "boja":"Aura sjajni",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "v 5.0",
+        "wifi": "Wi-Fi 802.11 a/b/g/n/ac/ax (2.4/5GHz), VHT80 MU-MIMO, 1024QAM",
+        "ramMemorija": "12 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Dual sim", "Brzo punjenje", "Senzori: Accelerometer, barometer, ultrasonic fingerprint senzor, gyro senzor, geomagnetic senzor, hall senzor, proximity senzor, RGB light senzor", "BLE S Olovka: 6-axis senzor uključujući gyro senzor i acceleration senzor"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyNote10+.png"
+        },
+        "cena": 119.990,
+        "najpopularniji" : true,
+        "najnoviji" : true
+    },
+    {
+        "id": 9,
+        "marka": "Huawei",
+        "model": "P30",
+        "tip": "telefon",
+        "dimenzije": "71.36 mm • 149.1 mm • 7.57 mm",
+        "tezina": "165 g",
+        "ekran": "6,8\" Dynamic AMOLED Infinity-O displej",
+        "rezolucija": "2340 x 1080 px",
+        "procesor": "HUAWEI Kirin 980 CPU, Octa-core, 2 x Cortex-A76 Based 2.6GHz+ 2 x Cortex-A76 Based 1.92GHz + 4 x Cortex-A55 1.8GHz",
+        "baterija": "3550 mAh",
+        "kamera":{
+            "zadnja": "40Mpix + 16Mpix + 8Mpix",
+            "prednja": "32Mpix"
+        },
+        "internaMemorija": "128 GB",
+        "operativniSistem": "Android 9.0 (Pie)",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "NFC", "GPS"
+        ],
+        "boja":"Crna",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "v 5.0",
+        "wifi": "Wi-Fi 802.11 a/b/g/n/ac/ax (2.4/5GHz), VHT80 MU-MIMO, 1024QAM",
+        "ramMemorija": "6 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Dual sim", "Brzo punjenje", "Senzori: Accelerometer, barometer, ultrasonic fingerprint senzor, gyro senzor, geomagnetic senzor, hall senzor, proximity senzor, RGB light senzor", "BLE S Olovka: 6-axis senzor uključujući gyro senzor i acceleration senzor"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/p30.png"
+        },
+        "cena": 74.990,
+        "najpopularniji" : false,
+        "najnoviji" : true
+    },
+    {
+        "id": 10,
+        "marka": "Huawei",
+        "model": "P20 Lite",
+        "tip": "telefon",
+        "dimenzije": "148.6 x 71.2 x 7.4 mm",
+        "tezina": "145 g",
+        "ekran": "5.84\" Dynamic AMOLED Infinity-O displej",
+        "rezolucija": "2280 x 1080 px",
+        "procesor": "Octa-Core (4x2.36 GHz Cortex-A53 & 4x1.7 GHz Cortex-A53)",
+        "baterija": "3000 mAh",
+        "kamera":{
+            "zadnja": "16 + 2 MP",
+            "prednja": "16 MP"
+        },
+        "internaMemorija": "64 GB",
+        "operativniSistem": "Android 8.0 (Oreo)",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "NFC", "GPS"
+        ],
+        "boja":"Crna",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Da",
+        "bluetooth": "v 4.2",
+        "wifi": "Wi-Fi 802.11 a/b/g/n/ac/ax (2.4/5GHz), VHT80 MU-MIMO, 1024QAM",
+        "ramMemorija": "4 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Dual sim", "Brzo punjenje", "Senzori: Accelerometer, barometer, ultrasonic fingerprint senzor, gyro senzor, geomagnetic senzor, hall senzor, proximity senzor, RGB light senzor", "BLE S Olovka: 6-axis senzor uključujući gyro senzor i acceleration senzor"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/p20Lite.png"
+        },
+        "cena": 25.990,
+        "najpopularniji" : false,
+        "najnoviji" : false
+    },
+    {
+        "id": 11,
+        "marka": "Apple",
+        "model": "Iphone 11 Pro",
+        "tip": "telefon",
+        "dimenzije": "71,4 mm x 144 mm x 8,1 mm",
+        "tezina": "188 g",
+        "ekran": "5.8\" All-screen OLED Super Retina XDR displej",
+        "rezolucija": "2436 x 1125 px",
+        "procesor": "Octa-Core (4x2.36 GHz Cortex-A53 & 4x1.7 GHz Cortex-A53)",
+        "baterija": "3000 mAh",
+        "kamera":{
+            "zadnja": "12 MP + 12 MP + 12 MP",
+            "prednja": "12 MP"
+        },
+        "internaMemorija": "256 GB",
+        "operativniSistem": "iOS 13",
+        "povezivanje":[
+            "ANT+", "USB Tip-C", "NFC", "GPS"
+        ],
+        "boja":"Midnight Green",
+        "videoZapis": [
+            "MP4", "M4V", "3GP", "3G2", "WMV", "ASF", "AVI", "FLV", "MKV", "WEBM"
+        ],
+        "podrskaZaMemorijskuKarticu": "Ne",
+        "bluetooth": "v 4.2",
+        "wifi": "Wi-Fi 802.11 a/b/g/n/ac/ax (2.4/5GHz), VHT80 MU-MIMO, 1024QAM",
+        "ramMemorija": "8 GB",
+        "mreze": [
+            "2G", "3G", "4G"
+        ],
+        "ostalo":[
+            "Dual sim", "Brzo punjenje", "Senzori: Accelerometer, barometer, ultrasonic fingerprint senzor, gyro senzor, geomagnetic senzor, hall senzor, proximity senzor, RGB light senzor", "BLE S Olovka: 6-axis senzor uključujući gyro senzor i acceleration senzor"
+        ],
+        "tastatura": "Touch",
+        "slika":{
+            "putanja": "images/proizvodi/iphone11Pro.webp"
+        },
+        "cena": 181.990,
+        "najpopularniji" : false,
+        "najnoviji" : true
+    }
+]

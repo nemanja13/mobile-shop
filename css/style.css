@@ -288,6 +288,9 @@ input{
     border-bottom: 1px solid rgb(77, 77, 77);
     height: 30px;
 }
+input:focus {
+    outline: none;
+}
 textarea{
     resize: none;
     height: 80px;
@@ -325,6 +328,7 @@ input[type=submit]:hover{
 #footer{
     background-color: rgba(216, 216, 216, 0.5);
     padding: 30px;
+    height: 300px;
 }
 #footer ul li{
     font-size: 14px;

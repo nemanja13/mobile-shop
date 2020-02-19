@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile shop</title>
+    <link rel="shortcut icon" href="images/icon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-4">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <div id="meni" class="col-lg-9 my-auto d-none d-lg-block">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li id="telefonija"><a href="#">Telefonija <i class="fas fa-angle-down"></i></a></li>
+                    <li><a href="#oNama">O nama</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#">Autor</a></li>
+                </ul>
+            </div>
+            <div class="col-8 d-lg-none">
+                <div id="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="podMeni" class="col-12 d-lg-none nevidljiv">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="#">Telefonija <i class="fas fa-angle-down"></i></a>
+                        <ul class="nevidljiv pl-3">
+                            <li><a href="#">Mobilni telefoni <i class="fas fa-angle-down"></i></a>
+                                <ul class="nevidljiv pl-4">
+                                    <li><a href="telefoni.html">Smart telefoni</a></li>
+                                    <li><a href="#">Dodatna oprema</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Tablet računari <i class="fas fa-angle-down"></i></a>
+                                <ul class="nevidljiv pl-4">
+                                    <li><a href="#">Tableti</a></li>
+                                    <li><a href="#">Dodatna oprema za tablete</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#oNama">O nama</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#">Autor</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="podMeniTelefonija" class="col-lg-12 my-auto nevidljiv">
+                <div class="red">
+                    <div class="col-lg-3">
+                        <p>Mobilni telefoni</p>
+                        <ul>
+                            <li><a href="telefoni.html">Smart telefoni</a></li>
+                            <li><a href="#">Dodatna oprema</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Tablet računari</p>
+                        <ul>
+                            <li><a href="#">Tableti</a></li>
+                            <li><a href="#">Dodatna oprema za tablete</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="footer">
+        <div class="row flex3">
+            <div class="col-sm-4 col-md-3 mt-4">
+                <h4>Proizvod i usluga</h4>
+                <ul>
+                    <li><a href="telefoni.html">Smart telefoni</a></li>
+                    <li><a href="#">Dodatna oprema</a></li>
+                    <li><a href="#">Tableti</a></li>
+                    <li><a href="#">Dodatna oprema za tablete</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 mt-4">
+                <h4>Informacije</h4>
+                <ul>
+                    <li>Radno vreme:</li>
+                    <li>Ponedeljak-Petak: 9h-20h</li>
+                    <li>Subota: 9h-15h</li>
+                    <li>Nedelja: zatvoreno</li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 mt-4">
+                <h4>O nama</h4>
+                <ul>
+                    <li><a href="#kontakt">Kontaktirajte nas</a></li>
+                    <li><a href="#oNama">O nama</a></li>
+                    <li>Pratite nas:</li>
+                </ul>
+                <div id="socMreze">
+                    <a href=${facebook}><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href=${instagram} class="ml-4"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href=${twitter} class="ml-4"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href=${youtube} class="ml-4"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

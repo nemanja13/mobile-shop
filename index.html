@@ -18,11 +18,11 @@
             </div>
             <div id="meni" class="col-lg-9 my-auto d-none d-lg-block">
                 <ul>
-                    <li><a href="#">Početna</a></li>
+                    <li><a href="index.html">Početna</a></li>
                     <li id="telefonija"><a href="#">Telefonija <i class="fas fa-angle-down"></i></a></li>
-                    <li id="korisnickaPodrska"><a href="#">Korisnicka podrška <i class="fas fa-angle-down"></i></a></li>
                     <li><a href="#oNama">O nama</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#">Autor</a></li>
                 </ul>
             </div>
             <div class="col-8 d-lg-none">
@@ -36,22 +36,12 @@
         <div class="row">
             <div id="podMeni" class="col-12 d-lg-none nevidljiv">
                 <ul>
-                    <li><a href="#">Početna</a></li>
+                    <li><a href="index.html">Početna</a></li>
                     <li><a href="#">Telefonija <i class="fas fa-angle-down"></i></a>
                         <ul class="nevidljiv pl-3">
-                            <li><a href="#">Šta je novo <i class="fas fa-angle-down"></i></a>
-                                <ul class="nevidljiv pl-4">
-                                    <li><a href="#">Samsung Galaxy Note10+</a></li>
-                                    <li><a href="#">Samsung Galaxy S10+</a></li>
-                                    <li><a href="#">Huawei Mate 30 Pro</a></li>
-                                    <li><a href="#">Huawei P30 Pro</a></li>
-                                    <li><a href="#">iPhone 11 Pro</a></li>
-                                    <li><a href="#">iPhone 11</a></li>
-                                </ul>
-                            </li>
                             <li><a href="#">Mobilni telefoni <i class="fas fa-angle-down"></i></a>
                                 <ul class="nevidljiv pl-4">
-                                    <li><a href="#">Smart telefoni</a></li>
+                                    <li><a href="telefoni.html">Smart telefoni</a></li>
                                     <li><a href="#">Dodatna oprema</a></li>
                                 </ul>
                             </li>
@@ -63,24 +53,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="korisnickaPodrska"><a href="#">Korisnicka podrška <i class="fas fa-angle-down"></i></a>
-                        <ul class="nevidljiv pl-3">
-                            <li><a href="#">Informacije <i class="fas fa-angle-down"></i></a>
-                                <ul class="nevidljiv pl-4">
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Garancije</a></li>
-                                    <li><a href="#">Novosti i upozorenja</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Moj servis <i class="fas fa-angle-down"></i></a>
-                                <ul class="nevidljiv pl-4">
-                                    <li><a href="#">Zatražite servis</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">O nama</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#oNama">O nama</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#">Autor</a></li>
                 </ul>
             </div>
         </div>
@@ -88,20 +63,9 @@
             <div id="podMeniTelefonija" class="col-lg-12 my-auto nevidljiv">
                 <div class="red">
                     <div class="col-lg-3">
-                        <p>Šta je novo</p>
-                        <ul>
-                            <li><a href="#">Samsung Galaxy Note10+</a></li>
-                            <li><a href="#">Samsung Galaxy S10+</a></li>
-                            <li><a href="#">Huawei Mate 30 Pro</a></li>
-                            <li><a href="#">Huawei P30 Pro</a></li>
-                            <li><a href="#">iPhone 11 Pro</a></li>
-                            <li><a href="#">iPhone 11</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
                         <p>Mobilni telefoni</p>
                         <ul>
-                            <li><a href="#">Smart telefoni</a></li>
+                            <li><a href="telefoni.html">Smart telefoni</a></li>
                             <li><a href="#">Dodatna oprema</a></li>
                         </ul>
                     </div>
@@ -110,24 +74,6 @@
                         <ul>
                             <li><a href="#">Tableti</a></li>
                             <li><a href="#">Dodatna oprema za tablete</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="podMeniKorisnickaPodrska" class="col-lg-12 my-auto nevidljiv">
-                <div class="red">
-                    <div class="col-lg-3">
-                        <p>Informacije</p>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Garancije</a></li>
-                            <li><a href="#">Novosti i upozorenja</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <p>Moj servis</p>
-                        <ul>
-                            <li><a href="#">Zatražite servis</a></li>
                         </ul>
                     </div>
                 </div>
@@ -172,41 +118,11 @@
     <div class="container-fluid" id="containerSadrzaj">
         <div class="row">
             <div class="col-12" id="najnovijeNajpopularnije">
-                <a href="#"><h2 class="aktivan">Najpopularnije</h2></a><a href="#"><h2>Najnovije</h2></a>
+                <a href="#"><h2 id="najpopularnije" class="aktivan">Najpopularnije</h2></a><a href="#"><h2 id="najnovije">Najnovije</h2></a>
             </div>
         </div>
         <div class="row flex3" id="sadrzaj">
-            <div class="col-lg-5 col-11 flex2 velikiBlok">
-                <img src="images/samsungTabS6.webp"/>
-                <h3>Samsung Galaxy Tab S6</h3>
-                <a href="#" class="nevidljiv">Saznaj više</a>
-            </div>
-            <div class="col-lg-6">
-                <div class="flex3 prviRed">
-                    <div class="col-5 maliBlok flex2">
-                        <img src="images/note10+.png"/>
-                        <h3>Samsung Galaxy Note10+</h3>
-                        <a href="#" class="nevidljiv">Saznaj više</a>
-                    </div>
-                    <div class="col-5 maliBlok flex2">
-                        <img src="images/samsungA50.webp"/>
-                        <h3>Samsung Galaxy A50</h3>
-                        <a href="#" class="nevidljiv">Saznaj više</a>
-                    </div>
-                </div>
-                <div class="flex3 drugiRed">
-                    <div class="col-5 maliBlok flex2">
-                        <img src="images/mate20.png"/>
-                        <h3>Huawei Mate20</h3>
-                        <a href="#" class="nevidljiv">Saznaj više</a>
-                    </div>
-                    <div class="col-5 maliBlok flex2">
-                        <img src="images/iphoneXS.png"/>
-                        <h3>Apple iPhone XS</h3>
-                        <a href="#" class="nevidljiv">Saznaj više</a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
     <div class="container-fluid" id="kompanija">
@@ -289,19 +205,19 @@
             <div class="col-sm-4 col-md-3 mt-4">
                 <h4>Proizvod i usluga</h4>
                 <ul>
-                    <li><a href="#">Smart telefoni</a></li>
+                    <li><a href="telefoni.html">Smart telefoni</a></li>
                     <li><a href="#">Dodatna oprema</a></li>
                     <li><a href="#">Tableti</a></li>
                     <li><a href="#">Dodatna oprema za tablete</a></li>
                 </ul>
             </div>
             <div class="col-sm-4 col-md-3 mt-4">
-                <h4>Korisnicka podrška</h4>
+                <h4>Informacije</h4>
                 <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Garancije</a></li>
-                    <li><a href="#">Novosti i upozorenja</a></li>
-                    <li><a href="#">Zatražite servis</a></li>
+                    <li>Radno vreme:</li>
+                    <li>Ponedeljak-Petak: 9h-20h</li>
+                    <li>Subota: 9h-15h</li>
+                    <li>Nedelja: zatvoreno</li>
                 </ul>
             </div>
             <div class="col-sm-4 col-md-3 mt-4">
@@ -320,7 +236,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
