@@ -13,8 +13,7 @@ var url=location.href
             $("#podMeni").slideToggle();
             $("#bars").toggleClass("MeniBar")
         });
-        $("#podMeni ul a").click(function(e){
-            e.preventDefault();
+        $("#podMeni ul a").click(function(){
             $(this).parent("li").children("ul").slideToggle("slow");
         });
     }
@@ -148,5 +147,34 @@ if(url.indexOf("index.html")!=-1){
             </div>
         </div>`;
         document.getElementById("sadrzaj").innerHTML=ispis;
+    }
+}
+if(url.indexOf("telefoni.html")!=-1){
+    window.onload=function(){
+        $.ajax({
+            url: "js/proizvodi.json",
+            type:"POST",
+            dataType:"json",
+            success:function(data){
+                ispisTelefona(data);
+            },
+            error:function(xhr){
+    
+            }
+        })
+    }
+    function ispisTelefona(data){
+        var telefoni=data.filter(p=>p.tip=="telefon");
+        var ispis="";
+        telefoni.forEach(telefon => {
+            ispis+=`
+            <div class="col-3 flex2">
+                <img src="${telefon.slika.putanja}" alt="${telefon.marka} ${telefon.model}">
+                <h3>${telefon.marka} ${telefon.model}</h3>
+                <h4>${telefon.cena}</h4>
+                <a href="#">Kupi</a>
+            </div>`
+        });
+        document.getElementById("sadrzajTelefoni").innerHTML=ispis;
     }
 }

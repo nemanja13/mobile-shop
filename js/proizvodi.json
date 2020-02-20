@@ -37,7 +37,7 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyTabS6.webp"
         },
-        "cena": 85.990,
+        "cena": "85.990",
         "najpopularniji" : true,
         "najnoviji" : false
     },
@@ -79,7 +79,7 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyA50.webp"
         },
-        "cena": 34.990,
+        "cena": "34.990",
         "najpopularniji" : true,
         "najnoviji" : false
     },
@@ -121,7 +121,7 @@
         "slika":{
             "putanja": "images/proizvodi/mate20.png"
         },
-        "cena": 74.990,
+        "cena": "74.990",
         "najpopularniji" : true,
         "najnoviji" : false
     },
@@ -163,7 +163,7 @@
         "slika":{
             "putanja": "images/proizvodi/iphoneXS.png"
         },
-        "cena": 89.990,
+        "cena": "89.990",
         "najpopularniji" : true,
         "najnoviji" : true
     },
@@ -205,7 +205,7 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyS20Ultra.webp"
         },
-        "cena": 166.990,
+        "cena": "166.990",
         "najpopularniji" : false,
         "najnoviji" : true
     },
@@ -247,7 +247,7 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyS10Lite.webp"
         },
-        "cena": 81.990,
+        "cena": "81.990",
         "najpopularniji" : false,
         "najnoviji" : false
     },
@@ -289,7 +289,7 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyA71.png"
         },
-        "cena": 56.990,
+        "cena": "56.990",
         "najpopularniji" : false,
         "najnoviji" : false
     },
@@ -331,7 +331,7 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyNote10+.png"
         },
-        "cena": 119.990,
+        "cena": "119.990",
         "najpopularniji" : true,
         "najnoviji" : true
     },
@@ -373,7 +373,7 @@
         "slika":{
             "putanja": "images/proizvodi/p30.png"
         },
-        "cena": 74.990,
+        "cena": "74.990",
         "najpopularniji" : false,
         "najnoviji" : true
     },
@@ -457,7 +457,7 @@
         "slika":{
             "putanja": "images/proizvodi/iphone11Pro.webp"
         },
-        "cena": 181.990,
+        "cena": "181.990",
         "najpopularniji" : false,
         "najnoviji" : true
     }

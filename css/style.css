@@ -179,7 +179,7 @@ p{
     left: 10%;
     bottom: 40%;
 }
-.slikaTekst a, #sadrzaj a{
+.slikaTekst a, #sadrzaj a, #sadrzajTelefoni a{
     letter-spacing: 2px;
     border-radius: 5px;
     padding: 8px 12px;
@@ -328,7 +328,7 @@ input[type=submit]:hover{
 #footer{
     background-color: rgba(216, 216, 216, 0.5);
     padding: 30px;
-    height: 300px;
+    min-height: 300px;
 }
 #footer ul li{
     font-size: 14px;
@@ -339,6 +339,9 @@ input[type=submit]:hover{
 }
 #socMreze a:hover{
     color: rgb(115, 164, 255);
+}
+#sadrzajTelefoni{
+    flex-wrap: wrap;
 }
 @media screen and (max-width : 991px){
     .velikiBlok{
