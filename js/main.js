@@ -22,7 +22,7 @@ if(url.indexOf("index.html")!=-1){
     window.onload=function(){
         podMeni();
         $.ajax({
-            url: "https://api.github.com/repos/nemanja13/mobile-shop/data/proizvodi.json",
+            url: "data/proizvodi.json",
             type:"POST",
             dataType:"json",
             success:function(data){
@@ -164,7 +164,7 @@ if(url.indexOf("telefoni.html")!=-1){
     localStorage.removeItem("filtriraniTelefoniPoMarci");
     window.onload=function(){
         $.ajax({
-            url: "https://api.github.com/repos/nemanja13/mobile-shop/data/proizvodi.json",
+            url: "data/proizvodi.json",
             type:"POST",
             dataType:"json",
             success:function(data){
