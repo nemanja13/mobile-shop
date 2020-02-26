@@ -37,9 +37,9 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyTabS6.webp"
         },
-        "cena": "85.990",
-        "najpopularniji" : true,
-        "najnoviji" : false
+        "cena": 85.990,
+        "najpopularniji" : 10,
+        "najnoviji" : "2020-1-20"
     },
     {
         "id": 2,
@@ -79,9 +79,9 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyA50.webp"
         },
-        "cena": "34.990",
-        "najpopularniji" : true,
-        "najnoviji" : false
+        "cena": 34.990,
+        "najpopularniji" : 9,
+        "najnoviji" : "2019-12-29"
     },
     {
         "id": 3,
@@ -91,7 +91,7 @@
         "dimenzije": "157.8 X 72.3 X 8.6 mm",
         "tezina": "189 g",
         "ekran": "6,4\" OLED",
-        "rezolucija": "3120 x 1440",
+        "rezolucija": "3120 x 1440 px",
         "procesor": "ARM Octa Core (2 x Cortex-A76 2,6 GHz + 2 x Cortex-A76 1,92 GHz + 4 x Cortex-A55 1,8 GHz)",
         "baterija": "4200 mAh",
         "kamera":{
@@ -121,9 +121,9 @@
         "slika":{
             "putanja": "images/proizvodi/mate20.png"
         },
-        "cena": "74.990",
-        "najpopularniji" : true,
-        "najnoviji" : false
+        "cena": 74.990,
+        "najpopularniji" : 9,
+        "najnoviji" : "2020-1-4"
     },
     {
         "id": 4,
@@ -133,7 +133,7 @@
         "dimenzije": "143.6 mm • 70.9 mm • 7.7 mm",
         "tezina": "177 g",
         "ekran": "5,8\" Super Retina HD",
-        "rezolucija": "2436 x 1125 piksela",
+        "rezolucija": "2436 x 1125 px",
         "procesor": "Hexa-core (2x2.5 GHz Vortex + 4x1.6 GHz Tempest)",
         "baterija": "2658 mAh",
         "kamera":{
@@ -163,9 +163,9 @@
         "slika":{
             "putanja": "images/proizvodi/iphoneXS.png"
         },
-        "cena": "89.990",
-        "najpopularniji" : true,
-        "najnoviji" : true
+        "cena": 89.990,
+        "najpopularniji" : 9,
+        "najnoviji" : "2020-2-25"
     },
     {
         "id": 5,
@@ -205,9 +205,9 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyS20Ultra.webp"
         },
-        "cena": "166.990",
-        "najpopularniji" : false,
-        "najnoviji" : true
+        "cena": 166.990,
+        "najpopularniji" : 9,
+        "najnoviji" : "2020-2-20"
     },
     {
         "id": 6,
@@ -247,9 +247,9 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyS10Lite.webp"
         },
-        "cena": "81.990",
-        "najpopularniji" : false,
-        "najnoviji" : false
+        "cena": 81.990,
+        "najpopularniji" : 8,
+        "najnoviji" : "2020-1-12"
     },
     {
         "id": 7,
@@ -289,9 +289,9 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyA71.png"
         },
-        "cena": "56.990",
-        "najpopularniji" : false,
-        "najnoviji" : false
+        "cena": 56.990,
+        "najpopularniji" : 8,
+        "najnoviji" : "2020-1-12"
     },
     {
         "id": 8,
@@ -301,7 +301,7 @@
         "dimenzije": "77,2 mm x 162,3 mm x 7,9 mm",
         "tezina": "196 g",
         "ekran": "6,8\" Dynamic AMOLED Infinity-O displej",
-        "rezolucija": "3040 ×1440 px",
+        "rezolucija": "3040 x 1440 px",
         "procesor": "64-bit Octa-core procesor",
         "baterija": "4300 mAh",
         "kamera":{
@@ -331,9 +331,9 @@
         "slika":{
             "putanja": "images/proizvodi/galaxyNote10+.png"
         },
-        "cena": "119.990",
-        "najpopularniji" : true,
-        "najnoviji" : true
+        "cena": 119.990,
+        "najpopularniji" : 9,
+        "najnoviji" : "2020-2-19"
     },
     {
         "id": 9,
@@ -373,9 +373,9 @@
         "slika":{
             "putanja": "images/proizvodi/p30.png"
         },
-        "cena": "74.990",
-        "najpopularniji" : false,
-        "najnoviji" : true
+        "cena": 74.990,
+        "najpopularniji" : 7,
+        "najnoviji" : "2020-2-25"
     },
     {
         "id": 10,
@@ -416,8 +416,8 @@
             "putanja": "images/proizvodi/p20Lite.png"
         },
         "cena": 25.990,
-        "najpopularniji" : false,
-        "najnoviji" : false
+        "najpopularniji" : 5,
+        "najnoviji" : "2019-12-18"
     },
     {
         "id": 11,
@@ -457,8 +457,8 @@
         "slika":{
             "putanja": "images/proizvodi/iphone11Pro.webp"
         },
-        "cena": "181.990",
-        "najpopularniji" : false,
-        "najnoviji" : true
+        "cena": 181.990,
+        "najpopularniji" : 5,
+        "najnoviji" : "2020-2-4"
     }
 ]

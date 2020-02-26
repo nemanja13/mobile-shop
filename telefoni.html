@@ -82,23 +82,36 @@
     </div>
     <div class="container-fluid" id="proizvodi">
         <div class="row">
-            <div class="col-6">
+            <div class="col-3">
                 <h1>Smart telefoni</h1>
             </div>
-            <div class="col-6">
-                <select>
-                    <option>Sortiraj po</option>
+            <div class="col-9 flex">
+                <form id="pretragaProizvoda" action="#" method="POST">
+                    <input type="search" name="search" placeholder="search" id="search">
+                    <i class="fa fa-search"></i>
+                </form>
+                <select id="sortiraj">
+                    <option value="0">Sortiraj po</option>
+                    <option value="nazivAsc">Nazivu od A do Z</option>
+                    <option value="nazivDesc">Nazivu od Z do A</option>
+                    <option value="cenaAsc">Ceni rastuće</option>
+                    <option value="cenaDesc">Ceni opadajuće</option>
                 </select>
             </div>
         </div>
         <div class="row">
             <div class="col-3 filteri">
-                <div class="col-10">
-                    <h2>Cena</h2>
-                    <div id="slider-limit"></div>
-                                                <div class="left mt-2"><span>RSD:</span><div id="slider-limit-value-min"></div></div>
-                                                <div class="right mt-2"><span>RSD:</span><div id="slider-limit-value-max"></div></div>
-                                                <div class="clearfix"></div>
+                <div class="col-10 blokFilter" id="divRobneMarke">
+                    <h2>Robna marka</h2>
+                </div>
+                <div class="col-10 blokFilter" id="divRamMemorije">
+                    <h2>Ram memorija</h2>
+                </div>
+                <div class="col-10 blokFilter" id="divRezolucije">
+                    <h2>Rezolucija</h2>
+                </div>
+                <div class="col-10 blokFilter" id="divInterneMemorije">
+                    <h2>Interna Memorija</h2>
                 </div>
             </div>
             <div class="col-9 flex" id="sadrzajTelefoni">
