@@ -12,8 +12,7 @@ var url=location.href
             $("#podMeni").slideToggle();
             $("#bars").toggleClass("MeniBar")
         });
-        $("#podMeni ul li a").click(function(e){
-            e.preventDefault();
+        $("#podMeni ul a").click(function(){
             $(this).parent("li").children("ul").slideToggle("slow");
         });
     }
@@ -23,7 +22,7 @@ if(url.indexOf("index.html")!=-1){
         podMeni();
         $.ajax({
             url: "data/proizvodi.json",
-            type:"POST",
+            type:"GET",
             dataType:"json",
             success:function(data){
                 ispisNajpopularnijih(data);
@@ -165,7 +164,7 @@ if(url.indexOf("telefoni.html")!=-1){
     window.onload=function(){
         $.ajax({
             url: "data/proizvodi.json",
-            type:"POST",
+            type:"GET",
             dataType:"json",
             success:function(data){
                 var telefoni=data.filter(p=>p.tip=="telefon");
