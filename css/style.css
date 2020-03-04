@@ -179,7 +179,7 @@ p{
     left: 10%;
     bottom: 40%;
 }
-.slikaTekst a, #sadrzaj a, #sadrzajTelefoni a{
+.slikaTekst a, #sadrzaj a, #sadrzajProizvodi a{
     letter-spacing: 2px;
     border-radius: 5px;
     padding: 8px 12px;
@@ -340,7 +340,7 @@ input[type=submit]:hover{
 #socMreze a:hover{
     color: rgb(115, 164, 255);
 }
-#sadrzajTelefoni{
+#sadrzajProizvodi{
     flex-wrap: wrap;
     justify-content: start;
     align-items: flex-start;
@@ -351,12 +351,28 @@ input[type=submit]:hover{
 .blokFilter{
     padding: 10px;
     border: 1px solid rgb(187, 178, 178);
-    min-height: 200px;
     margin: 10px auto;
 }
 .blokFilter span{
    display: inline-block;
    width: 100%;
+}
+#pretragaProizvoda{
+    position: relative;
+}
+#sortiraj{
+    padding: 5px 8px;
+    font-size: 17px;
+    color: rgb(94, 94, 94);
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+#faSearch{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+input[type="checkbox"]{
 }
 @media screen and (max-width : 991px){
     .velikiBlok{
