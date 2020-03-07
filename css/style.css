@@ -18,6 +18,12 @@ h1,h2{
     margin: 0px;
     box-sizing: border-box;
 }
+#logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color:rgb(69, 133, 253);
+}
 img{
     width: 100%;
     height: 100%;
@@ -36,7 +42,7 @@ ul{
 #meni ul li{
     display: inline;
     font-size: 18px;
-    padding: 4% 2%;
+    padding: 25px 20px;
 
 }
 a{
@@ -45,6 +51,9 @@ a{
 }
 ul li a:hover{
     color:darkblue;
+}
+#meni ul li:hover{
+    border-bottom: 3px solid darkblue;
 }
 #podMeniTelefonija, #podMeniKorisnickaPodrska{
     position: absolute;
@@ -196,7 +205,7 @@ p{
 .slikaTekst h1{
     margin-bottom: 30px;
 }
-.slikaTekst a:hover, #sadrzaj a:hover{
+.slikaTekst a:hover, #sadrzaj a:hover, #sadrzajProizvodi a:hover{
    color: #fff;
    background-color: rgb(69, 133, 253);
    transition: 0.5s;
@@ -254,10 +263,14 @@ p{
 }
 .podnaslov{
     text-align: center;
+    flex-wrap: wrap;
     margin: 20px 0px;
     font-size: 35px;
 }
-.blokONama{
+#searchSortFilter{
+    flex-wrap: wrap;
+}
+.blokONama, .proizvod{
     border: 1px solid rgb(187, 178, 178, 0.5);
     transition: box-shadow 1s;
     min-height: 400px;
@@ -266,7 +279,7 @@ p{
 .blokONama img{
     width: 100%;
 }
-.blokONama:hover{
+.blokONama:hover, .proizvod:hover{
     box-shadow : 5px 5px 10px 5px #c2c2c2;
 }
 .blokONama>div{
@@ -295,8 +308,8 @@ label{
     resize: none;
     height: 80px;
 }
-input[type=submit]{
-    width: auto;
+#formaKontakt input[type=submit]{
+    width: 150px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(115, 164, 255);
@@ -304,7 +317,7 @@ input[type=submit]{
     margin-top: 5px;
     background-color: #fff;
 }
-input[type=submit]:hover{
+#formaKontakt input[type=submit]:hover{
     background-color: rgb(115, 164, 255);
     color: #fff;
 }
@@ -340,13 +353,23 @@ input[type=submit]:hover{
 #socMreze a:hover{
     color: rgb(115, 164, 255);
 }
+.naslov{
+    padding: 15px;
+}
 #sadrzajProizvodi{
     flex-wrap: wrap;
     justify-content: start;
     align-items: flex-start;
+    padding-left: 30px;
+}
+#proizvodiTelefoni{
+    border-left: 3px solid rgb(115, 164, 255);
+    padding-left: 20px;
+    color: rgb(136, 134, 134);
 }
 #search{
-    width: 300px
+    width: 100%;
+    margin-bottom: 10px;
 }
 .blokFilter{
     padding: 10px;
@@ -360,8 +383,9 @@ input[type=submit]:hover{
 #pretragaProizvoda{
     position: relative;
 }
-#sortiraj{
+#sortiraj, #filteri{
     padding: 5px 8px;
+    margin-bottom: 10px;
     font-size: 17px;
     color: rgb(94, 94, 94);
     border: 1px solid #ced4da;
@@ -372,7 +396,56 @@ input[type=submit]:hover{
     right: 0px;
     top: 5px;
 }
-input[type="checkbox"]{
+#sadrzajProizvodi a{
+    letter-spacing: 0px;
+}
+.prikazi{
+    padding: 8px;
+}
+.proizvod img{
+    height: 50%;
+}
+.proizvod ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 25px;
+    width: 100%;
+}
+.proizvod li{
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.proizvod{
+    padding: 10px;
+    margin-left: 40px;
+}
+#filteriMd{
+    position: absolute;
+    z-index: 4;
+    background-color: white;
+}
+.staraCena, .usteda, .cena{
+    text-align: right;
+    width: 100%;
+}
+.staraCena{
+    color: rgb(136, 134, 134);
+    font-size: 18px;
+}
+.usteda{
+    font-size: 15px;
+    color: rgb(255, 45, 45);
+}
+.cena{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.naStanju{
+    width: 100%;
+    font-size: 15px;
+    color: rgb(0, 199, 0);
 }
 @media screen and (max-width : 991px){
     .velikiBlok{

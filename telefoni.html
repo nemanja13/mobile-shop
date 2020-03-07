@@ -13,19 +13,19 @@
 <body>
     <div id="header" class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-4">
-                <a href="#"><img src="images/logo.png"></a>
+            <div class="col-lg-4 col-10">
+                <a href="index.html" id="logo"><img src="images/logo.png"><h1>Mobile Shop</h1></a>
             </div>
-            <div id="meni" class="col-lg-9 my-auto d-none d-lg-block">
+            <div id="meni" class="col-lg-8 my-auto d-none d-lg-block">
                 <ul>
                     <li><a href="index.html">Početna</a></li>
                     <li id="telefonija"><a href="#">Telefonija <i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#oNama">O nama</a></li>
+                    <li><a href="index.html#oNama">O nama</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                     <li><a href="#">Autor</a></li>
                 </ul>
             </div>
-            <div class="col-8 d-lg-none">
+            <div class="col-2 d-lg-none">
                 <div id="bars">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -81,44 +81,65 @@
         </div>
     </div>
     <div class="container-fluid" id="proizvodi">
-        <div class="row">
-            <div class="col-3">
-                <h1>Smart telefoni</h1>
+        <div class="row naslov">
+            <div class="col-lg-3 col-12">
+                <h1 id="proizvodiTelefoni">Smart telefoni</h1>
             </div>
-            <div class="col-9 flex">
-                <form id="pretragaProizvoda" action="#" method="POST">
-                    <input type="text" name="search" placeholder="search" id="search">
+            <div id="searchSortFilter" class="col-lg-9 col-12 flex mt-4">
+                <form id="pretragaProizvoda" action="#" method="POST" class="col-md-4">
+                    <input type="text" name="search" placeholder="Unesite pojam za pretragu" id="search">
                     <i id="faSearch" class="fa fa-search"></i>
                 </form>
-                <select id="sortiraj">
+                <select id="sortiraj" class="col-md-3 col-5">
                     <option value="0">Sortiraj po</option>
                     <option value="nazivAsc">Nazivu od A do Z</option>
                     <option value="nazivDesc">Nazivu od Z do A</option>
                     <option value="cenaAsc">Ceni rastuće</option>
                     <option value="cenaDesc">Ceni opadajuće</option>
                 </select>
+                <div id="filterDd" class="col-md-4 col-5 d-lg-none">
+                    <h2 id="filteri" class="prikazi flex">Filteri <i class="fas fa-angle-down"></i></h2>
+                    <div id="filteriMd" class="nevidljiv col-12">
+                         <div class="col-11 blokFilter">
+                             <h4 class="flex prikazi">Robna marka <i class="fas fa-angle-down"></i></h4>
+                             <div class="divRobneMarke nevidljiv"></div>
+                         </div>
+                         <div class="col-11 blokFilter">
+                             <h4 class="flex prikazi">Ram memorija <i class="fas fa-angle-down"></i></h4>
+                             <div class="divRamMemorije nevidljiv"></div>
+                         </div>
+                         <div class="col-11 blokFilter">
+                             <h4 class="flex prikazi">Rezolucija <i class="fas fa-angle-down"></i></h4>
+                             <div class="divRezolucije nevidljiv"></div>
+                         </div>
+                         <div class="col-11 blokFilter">
+                             <h4 class="flex prikazi">Interna Memorija <i class="fas fa-angle-down"></i></h4>
+                             <div class="divInterneMemorije nevidljiv"></div>
+                         </div>
+                    </div>
+                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 filteri">
+            <div class="col-3 d-none d-lg-block filteri">
                 <div class="col-11 blokFilter">
-                    <h2 class="flex">Robna marka <i class="fas fa-angle-down"></i></h2>
-                    <div id="divRobneMarke" class="nevidljiv"></div>
+                    <h2 class="flex prikazi">Robna marka <i class="fas fa-angle-up"></i></h2>
+                    <div class="divRobneMarke"></div>
                 </div>
                 <div class="col-11 blokFilter">
-                    <h2 class="flex">Ram memorija <i class="fas fa-angle-down"></i></h2>
-                    <div id="divRamMemorije" class="nevidljiv"></div>
+                    <h2 class="flex prikazi">Ram memorija <i class="fas fa-angle-up"></i></h2>
+                    <div class="divRamMemorije"></div>
                 </div>
                 <div class="col-11 blokFilter">
-                    <h2 class="flex">Rezolucija <i class="fas fa-angle-down"></i></h2>
-                    <div id="divRezolucije" class="nevidljiv"></div>
+                    <h2 class="flex prikazi">Rezolucija <i class="fas fa-angle-up"></i></h2>
+                    <div class="divRezolucije"></div>
                 </div>
                 <div class="col-11 blokFilter">
-                    <h2 class="flex">Interna Memorija <i class="fas fa-angle-down"></i></h2>
-                    <div id="divInterneMemorije" class="nevidljiv"></div>
+                    <h2 class="flex prikazi">Interna Memorija <i class="fas fa-angle-up"></i></h2>
+                    <div class="divInterneMemorije"></div>
                 </div>
             </div>
-            <div class="col-9 flex" id="sadrzajProizvodi">
+            <div class="col-lg-9 col-12 flex" id="sadrzajProizvodi">
                 
             </div>
         </div>
