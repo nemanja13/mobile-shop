@@ -345,7 +345,9 @@ function sortiraj() {
            let proizvodi=sviProizvodi();
            if(localStorage.getItem("filtriraniProizvodi")){
                proizvodi=JSON.parse(localStorage.getItem("filtriraniProizvodi"));
+               console.log(proizvodi)
            }
+           console.log(proizvodi)
            proizvodi.sort(function(a,b) {
             if(val=="cenaDesc"){
                 let prvi=parseFloat(a.cena.nova);
@@ -409,6 +411,7 @@ function filtriranjePoMarci(){
         proizvodiNovi=sviProizvodi();
     }
     upisiULocalStorage("filtriraniProizvodiPoMarci", proizvodiNovi);
+    upisiULocalStorage("filtriraniProizvodi", proizvodiNovi);
     if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
     ispis(proizvodiNovi);
     if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
@@ -692,8 +695,8 @@ function provera(){
 
     let regExpImePrezime=/^[A-Z][a-z]{2,19}(\s[A-Z][a-z]{2,19})+$/;
     let regExpEmail=/^[^@]+@[^@]+\.[^@\.]+$/;
-    let regExpTelefon=/^06\d{8}$/;
-    let regExpPoruka=/^[^@]+$/;
+    let regExpTelefon=/^06\d{7,8}$/;
+    let regExpPoruka=/^[^@]+(\s[^@]+)*$/;
     let greske=0;
     if(!regExpImePrezime.test(imePrezime)){
         $("#greskaImePrezime").show();
