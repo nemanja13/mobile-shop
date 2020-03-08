@@ -246,21 +246,18 @@ if(url.indexOf("index.html")!=-1){
                 <h3>${noviNiz[0].marka} ${noviNiz[0].model}</h3>
                 <a href="#" class="nevidljiv dodajUKorpu" data-id="${noviNiz[0].id}><i class="fas fa-shopping-cart"></i> Dodaj u korpu</a>
             </div>
-            <div class="col-lg-6">
-                <div class="flex3 prviRed">`;
+            <div class="col-lg-6 col-11 flex3 prviRed">`;
 
         for(let i=1; i<noviNiz.length; i++){
             ispis+=`
-            <div class="col-5 maliBlok flex2">
+            <div class="col-12 col-sm-5 maliBlok flex2">
                 <img src="${noviNiz[i].slika.putanja}" alt="${noviNiz[i].marka} ${noviNiz[i].model}"/>
                 <h3>${noviNiz[i].marka} ${noviNiz[i].model}</h3>
                 <a href="#" class="nevidljiv dodajUKorpu" data-id="${noviNiz[i].id}"><i class="fas fa-shopping-cart"></i> Dodaj u korpu</a>
             </div>`;
         }
                 
-        ispis+=`
-            </div>
-        </div>`;
+        ispis+=`</div>`;
         document.getElementById("sadrzaj").innerHTML=ispis;
         $(".dodajUKorpu").click(dodajUKorpu);
     }

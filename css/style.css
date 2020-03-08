@@ -261,13 +261,9 @@ p{
     background-color: rgb(245, 245, 245);
 }
 .maliBlok{
-    margin: 20px;
+    margin: 20px 0px;
     padding: 20px;
     background-color: rgb(245, 245, 245);
-}
-.maliBlok{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 #sadrzaj .prviRed{
     flex-wrap: wrap;
