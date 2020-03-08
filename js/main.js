@@ -579,6 +579,7 @@ function tip(tip){
     localStorage.removeItem("filtriraniProizvodiPoRamMem");
     localStorage.removeItem("filtriraniProizvodiPoIntMem");
     localStorage.removeItem("filtriraniProizvodiPoRez");
+    localStorage.removeItem("filtriraniProizvodi");
     window.onload=function(){
         $.ajax({
             url: "data/proizvodi.json",
@@ -607,6 +608,7 @@ function tip2(tip){
     localStorage.removeItem("filtriraniProizvodiPoRamMem");
     localStorage.removeItem("filtriraniProizvodiPoIntMem");
     localStorage.removeItem("filtriraniProizvodiPoRez");
+    localStorage.removeItem("filtriraniProizvodi");
     window.onload=function(){
         $.ajax({
             url: "data/proizvodi.json",
