@@ -85,6 +85,13 @@ ul li a:hover{
     padding: 10px;
     font-size: 20px;
 }
+#formaKontakt .greska{
+    display: none;
+    color: rgb(255, 45, 45) !important;
+    float: left;
+    width: 100%;
+    margin: 5px 0px;
+}
 #header .broj{
     background-color: rgb(255, 45, 45);
     border-radius: 50px;
@@ -327,16 +334,16 @@ label{
     resize: none;
     height: 80px;
 }
-#formaKontakt input[type=submit]{
+#formaKontakt #posalji{
     width: 150px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(115, 164, 255);
     color: rgb(115, 164, 255);
-    margin-top: 5px;
+    margin-top: 10px;
     background-color: #fff;
 }
-#formaKontakt input[type=submit]:hover{
+#formaKontakt #posalji:hover{
     background-color: rgb(115, 164, 255);
     color: #fff;
 }
@@ -401,7 +408,7 @@ label{
 #pretragaProizvoda{
     position: relative;
 }
-#sortiraj, #filteri{
+#sortiraj, #filteri, #razlogKontakta{
     padding: 5px 8px;
     margin-bottom: 10px;
     font-size: 17px;

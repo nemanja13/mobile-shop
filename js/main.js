@@ -262,6 +262,7 @@ if(url.indexOf("index.html")!=-1){
             </div>
         </div>`;
         document.getElementById("sadrzaj").innerHTML=ispis;
+        $(".dodajUKorpu").click(dodajUKorpu);
     }
 }
 if(url.indexOf("telefoni.html")!=-1){
@@ -684,4 +685,53 @@ function prikaziFilter(){
         $(this).find("i").toggleClass("fas fa-angle-up");
         $(this).next().stop(true, true).slideToggle("slow");
     })
+}
+function provera(){
+    let imePrezime= document.getElementById("imePrezime").value;
+    let email= document.getElementById("email").value;
+    let telefon= document.getElementById("telefon").value;
+    let poruka= document.getElementById("poruka").value;
+    let razlogKontakta= document.getElementById("razlogKontakta").value;
+
+    let regExpImePrezime=/^[A-Z][a-z]{2,19}(\s[A-Z][a-z]{2,19})+$/;
+    let regExpEmail=/^[^@]+@[^@]+\.[^@\.]+$/;
+    let regExpTelefon=/^06\d{8}$/;
+    let regExpPoruka=/^[^@]+$/;
+    let greske=0;
+    if(!regExpImePrezime.test(imePrezime)){
+        $("#greskaImePrezime").show();
+        greske++;
+    }else{
+        $("#greskaImePrezime").hide();
+    }
+    if(!regExpEmail.test(email)){
+        $("#greskaEmail").show();
+        greske++;
+    }else{
+        $("#greskaEmail").hide();
+    }
+    if(!regExpTelefon.test(telefon)){
+        $("#greskaTelefon").show();
+        greske++;
+    }else{
+        $("#greskaTelefon").hide();
+    }
+    if(!regExpPoruka.test(poruka)){
+        $("#greskaPoruka").show();
+        greske++;
+    }
+    else{
+        $("#greskaPoruka").hide();
+    }
+    if(razlogKontakta==0){
+        $("#greskaRazlogKontakta").show();
+        greske++;
+    }
+    else{
+        $("#greskaRazlogKontakta").hide();
+    }
+    if(greske)
+    return false;
+    else
+    return true;
 }
