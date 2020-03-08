@@ -52,9 +52,6 @@ a{
 ul li a:hover{
     color:darkblue;
 }
-#meni ul li:hover{
-    border-bottom: 3px solid darkblue;
-}
 #podMeniTelefonija, #podMeniKorisnickaPodrska{
     position: absolute;
     border: 1px solid rgb(187, 178, 178);
@@ -81,6 +78,24 @@ ul li a:hover{
     padding: 7px 0px;
     line-height: 1.4;
     display: block;
+}
+#header .korpa{
+    color: rgb(69, 133, 253);
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+}
+#header .broj{
+    background-color: rgb(255, 45, 45);
+    border-radius: 50px;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 8px;
+    left: 25px;
+    width: 18px;
+    height: 18px;
 }
 #podMeni a{
     display: block;
@@ -239,13 +254,17 @@ p{
     background-color: rgb(245, 245, 245);
 }
 .maliBlok{
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 20px;
     background-color: rgb(245, 245, 245);
 }
-.drugiRed .maliBlok{
+.maliBlok{
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+#sadrzaj .prviRed{
+    flex-wrap: wrap;
+    margin: 20px;
 }
 #sadrzaj a{
     position: absolute;
@@ -358,9 +377,8 @@ label{
 }
 #sadrzajProizvodi{
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-around;
     align-items: flex-start;
-    padding-left: 30px;
 }
 #proizvodiTelefoni{
     border-left: 3px solid rgb(115, 164, 255);
@@ -419,7 +437,8 @@ label{
 }
 .proizvod{
     padding: 10px;
-    margin-left: 40px;
+    margin: 10px;
+    margin-right: auto;
 }
 #filteriMd{
     position: absolute;
@@ -444,8 +463,47 @@ label{
 }
 .naStanju{
     width: 100%;
+    margin-top: 10px;
     font-size: 15px;
     color: rgb(0, 199, 0);
+}
+#tabelaKupljenihProizvoda{
+    margin: 10px auto;
+    table-layout: fixed;
+    width: 100%;
+}
+#tabelaKupljenihProizvoda a{
+    color: rgb(115, 164, 255);
+}
+#tabelaKupljenihProizvoda th, #tabelaKupljenihProizvoda td{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#tabelaKupljenihProizvoda th{
+    background-color: rgb(94, 94, 94);
+    color: white;
+    padding: 10px;
+}
+#tabelaKupljenihProizvoda td{
+    border: 1px solid rgb(94, 94, 94);
+    text-align: center;
+    padding: 10px;
+}
+#tabelaKupljenihProizvoda img{
+    width:auto;
+    height: auto;
+    margin: 0px auto;
+}
+#prazno{
+    min-height: 600px;
+    background-color: rgb(231, 231, 231);
+    margin: 25px auto;
+    padding: 10px;
+    color: rgb(94, 94, 94);
+    justify-content: center;
+    text-align: center;
+    width: 80%;
 }
 @media screen and (max-width : 991px){
     .velikiBlok{
@@ -455,15 +513,15 @@ label{
         width: auto;
         height: auto;
     }
-    .prviRed{
-        margin-top: 20px;
-    }
     .blokKontakt:last-child{
         flex-direction: row;
         justify-content: space-around;
     }
     .blokKontakt{
         min-height: 300px;
+    }
+    .proizvod{
+        margin-right: 10px;
     }
 }
 @media screen and (max-width : 600px){

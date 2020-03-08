@@ -13,7 +13,8 @@
         "internaMemorija": "128 GB",
         "ramMemorija": "6 GB",
         "slika":{
-            "putanja": "images/proizvodi/galaxyTabS6.webp"
+            "putanja": "images/proizvodi/galaxyTabS6.webp",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyTabS6.png"
         },
         "cena": {
             "stara":"96.990",
@@ -36,7 +37,8 @@
         "internaMemorija": "128 GB",
         "ramMemorija": "4 GB",
         "slika":{
-            "putanja": "images/proizvodi/galaxyA50.webp"
+            "putanja": "images/proizvodi/galaxyA50.webp",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyA50.png"
         },
         "cena": {
             "stara":"39.990",
@@ -59,7 +61,8 @@
         "internaMemorija": "128 GB",
         "ramMemorija": "6 GB",
         "slika":{
-            "putanja": "images/proizvodi/mate20.png"
+            "putanja": "images/proizvodi/mate20.png",
+            "thumbnail":"images/proizvodi/thumbnail/mate20.png"
         },
         "cena":{
             "stara": "84.990",
@@ -82,7 +85,8 @@
         "internaMemorija": "64 GB",
         "ramMemorija": "4 GB",
         "slika":{
-            "putanja": "images/proizvodi/iphoneXS.png"
+            "putanja": "images/proizvodi/iphoneXS.png",
+            "thumbnail":"images/proizvodi/thumbnail/iphoneXS.png"
         },
         "cena": {
             "stara":"105.990",
@@ -105,7 +109,8 @@
         "internaMemorija": "128 GB",
         "ramMemorija": "12 GB",
         "slika":{
-            "putanja": "images/proizvodi/galaxyS20Ultra.webp"
+            "putanja": "images/proizvodi/galaxyS20Ultra.webp",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyS20Ultra.png"
         },
         "cena":{
             "stara": "178.990",
@@ -128,7 +133,8 @@
         "internaMemorija": "128 GB",
         "ramMemorija": "8 GB",
         "slika":{
-            "putanja": "images/proizvodi/galaxyS10Lite.webp"
+            "putanja": "images/proizvodi/galaxyS10Lite.webp",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyS10Lite.png"
         },
         "cena": {
             "stara":"89.990",
@@ -151,7 +157,8 @@
         "internaMemorija": "128 GB",
         "ramMemorija": "6 GB",
         "slika":{
-            "putanja": "images/proizvodi/galaxyA71.png"
+            "putanja": "images/proizvodi/galaxyA71.png",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyA71.png"
         },
         "cena": {
             "stara":"76.990",
@@ -174,7 +181,8 @@
         "internaMemorija": "256 GB",
         "ramMemorija": "12 GB",
         "slika":{
-            "putanja": "images/proizvodi/galaxyNote10+.png"
+            "putanja": "images/proizvodi/galaxyNote10+.png",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyNote10+.png"
         },
         "cena": {
             "stara":"130.990",
@@ -197,7 +205,8 @@
         "internaMemorija": "128 GB",
         "ramMemorija": "6 GB",
         "slika":{
-            "putanja": "images/proizvodi/p30.png"
+            "putanja": "images/proizvodi/p30.png",
+            "thumbnail":"images/proizvodi/thumbnail/p30.png"
         },
         "cena": {
             "stara":"77.990",
@@ -220,7 +229,8 @@
         "internaMemorija": "64 GB",
         "ramMemorija": "4 GB",
         "slika":{
-            "putanja": "images/proizvodi/p20Lite.png"
+            "putanja": "images/proizvodi/p20Lite.png",
+            "thumbnail":"images/proizvodi/thumbnail/p20Lite.png"
         },
         "cena": {
             "stara":"28.990",
@@ -243,7 +253,8 @@
         "internaMemorija": "256 GB",
         "ramMemorija": "8 GB",
         "slika":{
-            "putanja": "images/proizvodi/iphone11Pro.webp"
+            "putanja": "images/proizvodi/iphone11Pro.webp",
+            "thumbnail":"images/proizvodi/thumbnail/iphone11Pro.png"
         },
         "cena": {
             "stara":"186.990",
@@ -251,5 +262,427 @@
         },
         "najpopularniji" : 5,
         "najnoviji" : "2020-2-4"
+    },
+    {
+        "id": 12,
+        "marka": "Apple",
+        "model": "Iphone 7",
+        "tip": "telefon",
+        "ekran": "4.7\" Retina HD",
+        "rezolucija": "1334 x 750 px",
+        "kamera":{
+            "zadnja": "12 MP",
+            "prednja": "7 MP"
+        },
+        "internaMemorija": "32 GB",
+        "ramMemorija": "2 GB",
+        "slika":{
+            "putanja": "images/proizvodi/iphone7.jpg",
+            "thumbnail":"images/proizvodi/thumbnail/iphone7.png"
+        },
+        "cena": {
+            "stara":"55.990",
+            "nova":"49.900"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2019-12-4"
+    },
+    {
+        "id": 13,
+        "marka": "Huawei",
+        "model": "P smart Z",
+        "tip": "telefon",
+        "ekran": "6,59\" TFT LCD (LTPS)",
+        "rezolucija": "2340 x 1080 px",
+        "kamera":{
+            "zadnja": "16 MP + 2 MP",
+            "prednja": "16 MP"
+        },
+        "internaMemorija": "64 GB",
+        "ramMemorija": "4 GB",
+        "slika":{
+            "putanja": "images/proizvodi/pSmartZ.png",
+            "thumbnail":"images/proizvodi/thumbnail/pSmartZ.png"
+        },
+        "cena": {
+            "stara":"32.990",
+            "nova":"28.990"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2019-12-4"
+    },
+    {
+        "id": 14,
+        "marka": "Samsung",
+        "model": "Galaxy tab S5e",
+        "tip": "tablet",
+        "ekran": "10,5\" Super AMOLED",
+        "rezolucija": "2560 x 1600 px",
+        "kamera":{
+            "zadnja": "13 MP",
+            "prednja": "8 MP"
+        },
+        "internaMemorija": "64 GB",
+        "ramMemorija": "4 GB",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyTabS5e.webp",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyTabS5e.png"
+        },
+        "cena": {
+            "stara":"61.100",
+            "nova":"54.990"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2019-12-4"
+    },
+    {
+        "id": 15,
+        "marka": "Samsung",
+        "model": "Galaxy Tab A",
+        "tip": "tablet",
+        "ekran": "8\" TFT",
+        "rezolucija": "1280 x 800 px",
+        "kamera":{
+            "zadnja": "8 MP",
+            "prednja": "2 MP"
+        },
+        "internaMemorija": "32 GB",
+        "ramMemorija": "2 GB",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyTabA.png",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyTabA.png"
+        },
+        "cena": {
+            "stara":"19.999",
+            "nova":"17.990"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2019-11-11"
+    },
+    {
+        "id": 16,
+        "marka": "Huawei",
+        "model": "Media pad M3 Lite",
+        "tip": "tablet",
+        "ekran": "8\", IPS LED backlight, kapacitivni multitouch",
+        "rezolucija": "1920 x 1080 px",
+        "kamera":{
+            "zadnja": "8 MP",
+            "prednja": "8 MP"
+        },
+        "internaMemorija": "32 GB",
+        "ramMemorija": "3 GB",
+        "slika":{
+            "putanja": "images/proizvodi/mediaPadM3Lite.png",
+            "thumbnail":"images/proizvodi/thumbnail/mediaPadM3Lite.png"
+        },
+        "cena": {
+            "stara":"27.999",
+            "nova":"24.990"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2019-12-12"
+    },
+    {
+        "id": 17,
+        "marka": "Huawei",
+        "model": "T3 10 LTE",
+        "tip": "tablet",
+        "ekran": "9.6\" IPS LED backlight",
+        "rezolucija": "1280 x 800 px",
+        "kamera":{
+            "zadnja": "5 MP",
+            "prednja": "2 MP"
+        },
+        "internaMemorija": "16 GB",
+        "ramMemorija": "2 GB",
+        "slika":{
+            "putanja": "images/proizvodi/t310LTE.png",
+            "thumbnail":"images/proizvodi/thumbnail/t310LTE.png"
+        },
+        "cena": {
+            "stara":"25.999",
+            "nova":"22.990"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2020-1-8"
+    },
+    {
+        "id": 18,
+        "marka": "Alcatel",
+        "model": "1T 10",
+        "tip": "tablet",
+        "ekran": "10\"",
+        "rezolucija": "1280 x 800 px",
+        "kamera":{
+            "zadnja": "2 MP",
+            "prednja": "2 MP"
+        },
+        "internaMemorija": "16 GB",
+        "ramMemorija": "1 GB",
+        "slika":{
+            "putanja": "images/proizvodi/alcatel1T10.png",
+            "thumbnail":"images/proizvodi/thumbnail/alcatel1T10.png"
+        },
+        "cena": {
+            "stara":"15.999",
+            "nova":"13.990"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2020-1-20"
+    },
+    {
+        "id": 19,
+        "marka": "Alcatel",
+        "model": "8082D BLUISH",
+        "tip": "tablet",
+        "ekran": "10\"",
+        "rezolucija": "1280 x 800 px",
+        "kamera":{
+            "zadnja": "2 MP",
+            "prednja": "2 MP"
+        },
+        "internaMemorija": "16 GB",
+        "ramMemorija": "1 GB",
+        "slika":{
+            "putanja": "images/proizvodi/alcatel1T10.png",
+            "thumbnail":"images/proizvodi/thumbnail/alcatel1T10.png"
+        },
+        "cena": {
+            "stara":"14.999",
+            "nova":"13.200"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2020-1-23"
+    },
+    {
+        "id": 20,
+        "marka": "Samsung",
+        "model": "Tablet Galaxy Tab E",
+        "tip": "tablet",
+        "ekran": "9.6\" (24.34 cm) TFT",
+        "rezolucija": "1280 x 800 px",
+        "kamera":{
+            "zadnja": "2 MP",
+            "prednja": "2 MP"
+        },
+        "internaMemorija": "16 GB",
+        "ramMemorija": "1 GB",
+        "slika":{
+            "putanja": "images/proizvodi/galaxyTabE.png",
+            "thumbnail":"images/proizvodi/thumbnail/galaxyTabE.png"
+        },
+        "cena": {
+            "stara":"15.990",
+            "nova":"12.200"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2020-1-30"
+    },
+    {
+        "id": 20,
+        "marka": "Alcatel",
+        "model": "PIXI 3 9010X",
+        "tip": "tablet",
+        "ekran": "10.1\" IPS LED backlight",
+        "rezolucija": "1280 x 800 px",
+        "kamera":{
+            "zadnja": "2 MP",
+            "prednja": "2 MP"
+        },
+        "internaMemorija": "8 GB",
+        "ramMemorija": "1 GB",
+        "slika":{
+            "putanja": "images/proizvodi/alcatelPIXI.png",
+            "thumbnail":"images/proizvodi/thumbnail/alcatelPIXI.png"
+        },
+        "cena": {
+            "stara":"15.000",
+            "nova":"10.200"
+        },
+        "najpopularniji" : 5,
+        "najnoviji" : "2020-1-30"
+    },
+    {
+        "id": 21,
+        "marka": "Samsung",
+        "model": "zaštita za Galaxy Note 4",
+        "tip": "dozTelefon",
+        "slika":{
+            "putanja": "images/proizvodi/zGalaxyNote4.png",
+            "thumbnail":"images/proizvodi/thumbnail/zGalaxyNote4.png"
+        },
+        "cena": {
+            "stara":"5.221",
+            "nova":"4.699"
+        }
+    },
+    {
+        "id": 22,
+        "marka": "Huawei",
+        "model": "Futrola sa preklopom VIEW COVER P20",
+        "tip": "dozTelefon",
+        "slika":{
+            "putanja": "images/proizvodi/zFutrolaP20.png",
+            "thumbnail":"images/proizvodi/thumbnail/zFutrolaP20.png"
+        },
+        "cena": {
+            "stara":"4.433",
+            "nova":"3.990"
+        }
+    },
+    {
+        "id": 23,
+        "marka": "Huawei",
+        "model": "FlipCover FUTROLA CRNA P20LITE",
+        "tip": "dozTelefon",
+        "slika":{
+            "putanja": "images/proizvodi/zP20Lite.png",
+            "thumbnail":"images/proizvodi/thumbnail/zP20Lite.png"
+        },
+        "cena": {
+            "stara":"2.200",
+            "nova":"1.990"
+        }
+    },
+    {
+        "id": 24,
+        "marka": "Samsung",
+        "model": "Silikonska maska za Galaxy S10+",
+        "tip": "dozTelefon",
+        "slika":{
+            "putanja": "images/proizvodi/zS10.png",
+            "thumbnail":"images/proizvodi/thumbnail/zS10.png"
+        },
+        "cena": {
+            "stara":"2.200",
+            "nova":"1.999"
+        }
+    },
+    {
+        "id": 25,
+        "marka": "Huawei",
+        "model": "Zaštitna maska FUTROLA P20LITE",
+        "tip": "dozTelefon",
+        "slika":{
+            "putanja": "images/proizvodi/zMaskaP20Lite.png",
+            "thumbnail":"images/proizvodi/thumbnail/zMaskaP20Lite.png"
+        },
+        "cena": {
+            "stara":"1.100",
+            "nova":"999"
+        }
+    },
+    {
+        "id": 26,
+        "marka": "Huawei",
+        "model": "Brzi punjač AP32 TYPE C",
+        "tip": "dozTelefon",
+        "slika":{
+            "putanja": "images/proizvodi/punjacHuawei.png",
+            "thumbnail":"images/proizvodi/thumbnail/punjacHuawei.png"
+        },
+        "cena": {
+            "stara":"2.700",
+            "nova":"2.490"
+        }
+    },
+    {
+        "id": 27,
+        "marka": "Samsung",
+        "model": "Punjač za mobilni telefon EP TA12EBEUGWW",
+        "tip": "dozTelefon",
+        "slika":{
+            "putanja": "images/proizvodi/punjacSamsung.png",
+            "thumbnail":"images/proizvodi/thumbnail/punjacSamsung.png"
+        },
+        "cena": {
+            "stara":"2.790",
+            "nova":"2.590"
+        }
+    },
+    {
+        "id": 28,
+        "marka": "Huawei",
+        "model": "Futrola sa preklopom MEDIAPAD T3",
+        "tip": "dozTablet",
+        "slika":{
+            "putanja": "images/proizvodi/zMediapadT3.png",
+            "thumbnail":"images/proizvodi/thumbnail/zMediapadT3.png"
+        },
+        "cena": {
+            "stara":"2.290",
+            "nova":"1.999"
+        }
+    },
+    {
+        "id": 29,
+        "marka": "HAMA",
+        "model": "Futrola za tablet 108251",
+        "tip": "dozTablet",
+        "slika":{
+            "putanja": "images/proizvodi/futrolaHama.png",
+            "thumbnail":"images/proizvodi/thumbnail/futrolaHama.png"
+        },
+        "cena": {
+            "stara":"1.299",
+            "nova":"1.199"
+        }
+    },
+    {
+        "id": 30,
+        "marka": "HAMA",
+        "model": "Futrola sa mini tastaturom za tablet PC uredjaje 7\"",
+        "tip": "dozTablet",
+        "slika":{
+            "putanja": "images/proizvodi/hamaFutrola.png",
+            "thumbnail":"images/proizvodi/thumbnail/hamaFutrola.png"
+        },
+        "cena": {
+            "stara":"1.100",
+            "nova":"990"
+        }
+    },
+    {
+        "id": 31,
+        "marka": "Samsung",
+        "model": "Galaxy Tab 2 Simple Sleeve/Pouch",
+        "tip": "dozTablet",
+        "slika":{
+            "putanja": "images/proizvodi/futrolaTab2.png",
+            "thumbnail":"images/proizvodi/thumbnail/futrolaTab2.png"
+        },
+        "cena": {
+            "stara":"1.500",
+            "nova":"1.390"
+        }
+    },
+    {
+        "id": 32,
+        "marka": "HAMA",
+        "model": "Futrola za tablete i e-citace 6\" Piscine",
+        "tip": "dozTablet",
+        "slika":{
+            "putanja": "images/proizvodi/hamaFutrola6.png",
+            "thumbnail":"images/proizvodi/thumbnail/hamaFutrola6.png"
+        },
+        "cena": {
+            "stara":"1.100",
+            "nova":"990"
+        }
+    },
+    {
+        "id": 33,
+        "marka": "Apple",
+        "model": "punjač za tablet USB-C Power Adapter - MU7V2ZM/A 18 W",
+        "tip": "dozTablet",
+        "slika":{
+            "putanja": "images/proizvodi/punjacApple.png",
+            "thumbnail":"images/proizvodi/thumbnail/punjacApple.png"
+        },
+        "cena": {
+            "stara":"6.300",
+            "nova":"5.700"
+        }
     }
 ]
