@@ -244,7 +244,7 @@ if(url.indexOf("index.html")!=-1){
             <div class="col-lg-5 col-11 flex2 velikiBlok">
                 <img src="${noviNiz[0].slika.putanja}" alt="${noviNiz[0].marka} ${noviNiz[0].model}"/>
                 <h3>${noviNiz[0].marka} ${noviNiz[0].model}</h3>
-                <a href="#" class="nevidljiv dodajUKorpu" data-id="${noviNiz[0].id}><i class="fas fa-shopping-cart"></i> Dodaj u korpu</a>
+                <a href="#" class="nevidljiv dodajUKorpu" data-id="${noviNiz[0].id}"><i class="fas fa-shopping-cart"></i> Dodaj u korpu</a>
             </div>
             <div class="col-lg-6 col-11 flex3 prviRed">`;
 
