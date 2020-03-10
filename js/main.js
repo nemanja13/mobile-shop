@@ -47,7 +47,8 @@ function dodajUKorpu(e){
     brojProizvodaUKorpi();
 }
 function korpa(){
-    let prazno="<div id='prazno' class='flex'><h1>Vaša korpa je prazna <i class='fas fa-shopping-cart'></i></h1></div>";
+    let prazno="<div class='prazno flex'><h1>Vaša korpa je prazna <i class='fas fa-shopping-cart'></i></h1></div>";
+    let suma=0;
     if(localStorage.getItem("kupljenProizvod")){
         $.ajax({
             url: "data/proizvodi.json",
@@ -69,22 +70,27 @@ function korpa(){
                     <tr>
                         <th>Slika</th>
                         <th>Naziv</th>
-                        <th>Osnovna cena</th>
-                        <th>Kolicina</th>
-                        <th>Iznos</th>
+                        <th>Cena</th>
+                        <th>Količina</th>
+                        <th>Ukupna cena</th>
                         <th>Ukloni</th>
                     </tr>`;
                 kupljeniProizvodi.forEach(p=>{
                     ispis+=`<tr>
                         <td><img class="thumbnail" src="${p.slika.thumbnail}" alt="${p.marka} ${p.model}"/></td>
                         <td>${p.marka} ${p.model}</td>
-                        <td>${p.cena.nova}</td>
+                        <td>${p.cena.nova} RSD</td>
                         <td>${p.kolicina}</td>
-                        <td>${iznos(p.cena.nova,p.kolicina)}</td>
+                        <td>${iznos(p.cena.nova,p.kolicina)} RSD</td>
                         <td><a href="#" data-id="${p.id}">Ukloni</a></td>
-                    </tr>`
+                    </tr>`;
+                    suma+=parseInt(zbir(iznos(p.cena.nova,p.kolicina)));
                 });
-                ispis+="</table>";
+                ispis+=`</table>
+                <div id="kupovina">
+                <div class="red"><h4>Ukupna cena: </h4> <p id="ukupnaCena"> ${suma.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} RSD</p></div>
+                <a href="#" id="nastaviKupovinu">Nastavi kupovinu</a></div>
+                `;
                 document.getElementById("proizvodi").innerHTML=ispis;
                 $("#tabelaKupljenihProizvoda a").click(function(e){
                     let val=$(this).data("id");
@@ -118,6 +124,10 @@ function iznos(c, k){
     iznos=iznos.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     return iznos;
 }
+function zbir(c){
+    let cena=c.replace(/(\.)/g, "");
+    return cena;
+}
 function brojProizvodaUKorpi(){
     if(localStorage.getItem("kupljenProizvod")){
         let proizvodi=JSON.parse(localStorage.getItem("kupljenProizvod"));
@@ -126,7 +136,7 @@ function brojProizvodaUKorpi(){
         proizvodi.forEach(p=>{
             broj+=p.kolicina;
         });
-        $("#header .broj").text(broj).show();
+        $("#header .broj").text(broj).css("display", "flex");
         }else{
             $("#header .broj").hide();
         }
@@ -138,6 +148,8 @@ if(url.indexOf("index.html")!=-1){
     window.onload=function(){
         podMeni();
         brojProizvodaUKorpi();
+        prikazSlajdera();
+        oNama();
         $.ajax({
             url: "data/proizvodi.json",
             type:"GET",
@@ -375,9 +387,9 @@ function sortiraj() {
             }
         });
         if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
-        ispis(proizvodi);
+        ispisProizvoda(proizvodi);
         if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-        ispis2(proizvodi);
+        ispisProizvoda2(proizvodi);
 }
 var nizMarki=[];
 var nizRamMem=[];
@@ -412,10 +424,14 @@ function filtriranjePoMarci(){
     }
     upisiULocalStorage("filtriraniProizvodiPoMarci", proizvodiNovi);
     upisiULocalStorage("filtriraniProizvodi", proizvodiNovi);
-    if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
-    ispis(proizvodiNovi);
-    if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-    ispis2(proizvodiNovi);
+    if(proizvodiNovi.length){
+        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
+        ispisProizvoda(proizvodiNovi);
+        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
+        ispisProizvoda2(proizvodiNovi);
+    }else{
+        nemaProizvoda();
+    }
 }
 function filtriranjePoRamMem(){
     
@@ -457,10 +473,14 @@ function filtriranjePoRamMem(){
     else{
         upisiULocalStorage("filtriraniProizvodiPoRamMem", proizvodiNovi);
     }
-    if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
-    ispis(proizvodiNovi);
-    if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-    ispis2(proizvodiNovi);
+    if(proizvodiNovi.length){
+        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
+        ispisProizvoda(proizvodiNovi);
+        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
+        ispisProizvoda2(proizvodiNovi);
+    }else{
+        nemaProizvoda();
+    }
 }
 function filtriranjePoIntMem(){
     
@@ -502,10 +522,14 @@ function filtriranjePoIntMem(){
     else{
         upisiULocalStorage("filtriraniProizvodiPoIntMem", proizvodiNovi);
     }
-    if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
-    ispis(proizvodiNovi);
-    if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-    ispis2(proizvodiNovi);
+    if(proizvodiNovi.length){
+        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
+        ispisProizvoda(proizvodiNovi);
+        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
+        ispisProizvoda2(proizvodiNovi);
+    }else{
+        nemaProizvoda();
+    }
 }
 function filtriranjePoRezoluciji(){
     
@@ -547,10 +571,14 @@ function filtriranjePoRezoluciji(){
         upisiULocalStorage("filtriraniProizvodiPoRez", proizvodiNovi);
     }
     upisiULocalStorage("filtriraniProizvodi", proizvodiNovi);
-    if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
-    ispis(proizvodiNovi);
-    if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-    ispis2(proizvodiNovi);
+    if(proizvodiNovi.length){
+        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
+        ispisProizvoda(proizvodiNovi);
+        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
+        ispisProizvoda2(proizvodiNovi);
+    }else{
+        nemaProizvoda();
+    }
 }
 function filtriranjeSearch(){
     $("input[type='checkbox']").prop("checked", false);
@@ -570,10 +598,14 @@ function filtriranjeSearch(){
         proizvodi=sviProizvodi();
     }
     upisiULocalStorage("filtriraniProizvodi", proizvodi);
-    if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
-    ispis(proizvodi);
-    if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-    ispis2(proizvodi);
+    if(proizvodi.length){
+        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
+        ispisProizvoda(proizvodi);
+        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
+        ispisProizvoda2(proizvodi);
+    }else{
+        nemaProizvoda();
+    }
 }
 function tip(tip){
     localStorage.removeItem("filtriraniProizvodiPoRamMem");
@@ -589,7 +621,7 @@ function tip(tip){
                 var proizvodi=data.filter(p=>p.tip==tip);
                 upisiULocalStorage("proizvodi", proizvodi);
                 upisiULocalStorage("filtriraniProizvodiPoMarci", proizvodi);
-                ispis(sviProizvodi());
+                ispisProizvoda(sviProizvodi());
                 inputCheckbox();
                 $("input[name='robnaMarka']").click(filtriranjePoMarci);
                 $("input[name='ramMemorija']").click(filtriranjePoRamMem);
@@ -618,7 +650,7 @@ function tip2(tip){
                 var proizvodi=data.filter(p=>p.tip==tip);
                 upisiULocalStorage("proizvodi", proizvodi);
                 upisiULocalStorage("filtriraniProizvodiPoMarci", proizvodi);
-                ispis2(sviProizvodi());
+                ispisProizvoda2(sviProizvodi());
                 inputCheckbox2();
                 $("input[name='robnaMarka']").click(filtriranjePoMarci);
             },
@@ -630,7 +662,7 @@ function tip2(tip){
         document.getElementById("search").addEventListener("keyup", filtriranjeSearch);
     }
 }
-function ispis(proizvodi){
+function ispisProizvoda(proizvodi){
     let ispis="";
     proizvodi.forEach(proizvod => {
         ispis+=`
@@ -654,7 +686,7 @@ function ispis(proizvodi){
     $(".dodajUKorpu").click(dodajUKorpu);
     
 }
-function ispis2(proizvodi){
+function ispisProizvoda2(proizvodi){
     let ispis="";
     proizvodi.forEach(proizvod => {
         ispis+=`
@@ -736,4 +768,83 @@ function provera(){
     return false;
     else
     return true;
+}
+function oNama(){
+    let h2=document.createElement("h2");
+    h2.setAttribute("class", "podnaslov");
+    h2.append("O nama");
+    let div= document.createElement("div");
+    div.setAttribute("class", "row flex3");
+    $.ajax({
+        url : "data/oNama.json",
+        method : "GET",
+        dataType: "json",
+        success : function(data){
+            data.forEach(el => {
+                let blokONama=document.createElement("div");
+                blokONama.setAttribute("class", "col-10 col-md-3 blokONama");
+
+                let slika=document.createElement("img");
+                slika.setAttribute("src", el.slika.putanja);
+                slika.setAttribute("alt", el.slika.opis);
+
+                let blok=document.createElement("div");
+
+                let h3=document.createElement("h3");
+                let sadrzajH3=document.createTextNode(el.naslov);
+                h3.appendChild(sadrzajH3);
+
+                let p=document.createElement("p");
+                let sadrzajP=document.createTextNode(el.tekst);
+                p.appendChild(sadrzajP);
+
+                blok.appendChild(h3);
+                blok.appendChild(p);
+
+                blokONama.appendChild(slika);
+                blokONama.appendChild(blok);
+
+                div.append(blokONama);
+            });
+            document.getElementById("oNama").append(h2);
+            document.getElementById("oNama").append(div);
+        },
+        error : function(err){
+            console.error(err);
+        }
+    });
+}
+function prikazSlajdera(){
+$.ajax({
+    url : "data/slajder.json",
+    method : "GET",
+    dataType: "json",
+    success : function(data){
+        let ispis="";
+        let klasa;
+        let velicina;
+        data.forEach((el, i)=>{
+            i==0?klasa="vidljiv":klasa="nevidljiv";
+            i==1?velicina="col-12":velicina="col-10 col-md-7 col-lg-5";
+            ispis+=`
+            <div class="col-12 slajderSlika${i+1} ${klasa}">
+            <img src="${el.slika.src}" alt="${el.slika.opis}"/>
+            <div class="${velicina} slikaTekst" id="${el.id}">
+                <h1>${el.naslov}</h1>
+                <p>${el.tekst}</p>
+                <a href="${el.link.putanja}">${el.link.tekst}</a>
+            </div>
+            </div>`;
+        });
+        document.getElementById("slajder").innerHTML=ispis;
+    },
+    error : function(err){
+        console.error(err);
+    }
+});
+
+}
+function nemaProizvoda(){
+    ispis="<div class='prazno flex'> <h1>Vaša pretraga nije dala rezultate. <i class='fas fa-search'></i></h1> </div>";
+    document.getElementById("sadrzajProizvodi").innerHTML=ispis;
 }

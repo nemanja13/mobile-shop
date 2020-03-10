@@ -103,6 +103,7 @@ ul li a:hover{
     left: 25px;
     width: 18px;
     height: 18px;
+    display: none;
 }
 #podMeni a{
     display: block;
@@ -474,6 +475,7 @@ label{
     margin: 10px auto;
     table-layout: fixed;
     width: 100%;
+    border-collapse: collapse;
 }
 #tabelaKupljenihProizvoda a{
     color: rgb(115, 164, 255);
@@ -483,13 +485,14 @@ label{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+#tabelaKupljenihProizvoda tr{
+    border-bottom: 1px solid rgb(94, 94, 94) !important;
+}
 #tabelaKupljenihProizvoda th{
-    background-color: rgb(94, 94, 94);
-    color: white;
     padding: 10px;
+    text-transform: uppercase;
 }
 #tabelaKupljenihProizvoda td{
-    border: 1px solid rgb(94, 94, 94);
     text-align: center;
     padding: 10px;
 }
@@ -498,7 +501,7 @@ label{
     height: auto;
     margin: 0px auto;
 }
-#prazno{
+.prazno{
     min-height: 600px;
     background-color: rgb(231, 231, 231);
     margin: 25px auto;
@@ -507,6 +510,27 @@ label{
     justify-content: center;
     text-align: center;
     width: 80%;
+}
+#kupovina{
+    text-align: right;
+    padding: 15px;
+}
+#kupovina>div{
+    justify-content: flex-end;
+    align-items: baseline;
+}
+#ukupnaCena{
+    font-size: 30px;
+    margin: 10px;
+}
+#nastaviKupovinu{
+    border-radius: 25px;
+    background-color: rgb(69, 133, 253);
+    color: white;
+    padding: 10px;
+}
+#nastaviKupovinu:hover{
+    background-color: darkblue;
 }
 @media screen and (max-width : 991px){
     .velikiBlok{

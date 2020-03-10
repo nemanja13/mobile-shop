@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "naslov":"Vizija",
+        "tekst": "Vizija kompanije Mobile shop je da pruži najviši nivo usluge na domaćem tržištu uz stalne inovacije i obogaćivanje proizvodnog asortimana.",
+        "slika":{
+            "putanja":"images/vizijaMala.jpg",
+            "opis": "Vizija kompanije Mobile shop"
+        }
+    },
+    {
+        "id":2,
+        "naslov":"Kompanija",
+        "tekst": "Od svog osnivanja 2005. godine, kompanija Mobile shop je jedan od lidera na tržištu tehnike u Srbiji.",
+        "slika":{
+            "putanja":"images/kompanijaMala.jpg",
+            "opis": "Kompanija Mobile shop"
+        }
+    },
+    {
+        "id":3,
+        "naslov":"Maloprodajna mreža",
+        "tekst": "Mobile shop maloprodajna mreža pokriva preko 25 gradova širom Srbije. Mobile shop ima i Call Centar koji je na raspolaganju kupcima.",
+        "slika":{
+            "putanja":"images/callCentarMala.jpg",
+            "opis": "Call centar kompanije Mobile shop"
+        }
+    }
+]

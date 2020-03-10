@@ -1,0 +1,41 @@
+[
+    {
+        "id":"pozicijaPrvogTeksta",
+        "naslov":"Moćni za 10",
+        "tekst":"Prigrli moć stvaranja sa Galaxy Note10.",
+        "slika":{
+            "src": "images/samsungS10LiteNote10lite.jpg",
+            "opis": "Samsung S10 Lite and Samsung Note 10 Lite"
+        },
+        "link":{
+            "putanja": "telefoni.html",
+            "tekst": "Saznaj više"
+        }
+    },
+    {
+        "id":"pozicijaDrugogTeksta",
+        "naslov":"Stigla je nova Galaxy generacija.",
+        "tekst":"",
+        "slika":{
+            "src": "images/samsungS10.png",
+            "opis": "Samsung S10"
+        },
+        "link":{
+            "putanja": "telefoni.html",
+            "tekst": "Saznaj više"
+        }
+    },
+    {
+        "id":"pozicijaTrecegTeksta",
+        "naslov":"HUAWEI P30 Pro Postavljanje novih standarda.",
+        "tekst":"",
+        "slika":{
+            "src": "images/p30Pro.jpg",
+            "opis": "Huawei P30 Pro"
+        },
+        "link":{
+            "putanja": "telefoni.html",
+            "tekst": "Saznaj više"
+        }
+    }
+]
