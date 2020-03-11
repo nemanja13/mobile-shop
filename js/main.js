@@ -386,6 +386,8 @@ function sortiraj() {
                 return;
             }
         });
+        upisiULocalStorage("proizvodi", proizvodi);
+        upisiULocalStorage("filtriraniProizvodi", proizvodi);
         ispisProizvoda(proizvodi);
 }
 var nizMarki=[];
@@ -395,7 +397,6 @@ var nizIntMem=[];
 function filtriranjePoMarci(){
     
     let val=this.value;
-    document.getElementById("sortiraj").selectedIndex=0;
     document.getElementById("search").value="";
     if(!nizMarki.includes(val)){
         nizMarki.push(val);
@@ -430,7 +431,6 @@ function filtriranjePoMarci(){
 function filtriranjePoRamMem(){
     
     let val=this.value;
-    document.getElementById("sortiraj").selectedIndex=0;
     document.getElementById("search").value="";
     if(!nizRamMem.includes(val)){
         nizRamMem.push(val);
@@ -476,7 +476,6 @@ function filtriranjePoRamMem(){
 function filtriranjePoIntMem(){
     
     let val=this.value;
-    document.getElementById("sortiraj").selectedIndex=0;
     document.getElementById("search").value="";
     if(!nizIntMem.includes(val)){
         nizIntMem.push(val);
@@ -522,7 +521,6 @@ function filtriranjePoIntMem(){
 function filtriranjePoRezoluciji(){
     
     let val=this.value;
-    document.getElementById("sortiraj").selectedIndex=0;
     document.getElementById("search").value="";
     if(!nizRezolucija.includes(val)){
         nizRezolucija.push(val);
@@ -567,7 +565,6 @@ function filtriranjePoRezoluciji(){
 }
 function filtriranjeSearch(){
     $("input[type='checkbox']").prop("checked", false);
-    document.getElementById("sortiraj").selectedIndex=0;
     nizIntMem=[];
     nizMarki=[];
     nizRamMem=[];
