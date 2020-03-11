@@ -386,10 +386,7 @@ function sortiraj() {
                 return;
             }
         });
-        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
         ispisProizvoda(proizvodi);
-        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-        ispisProizvoda2(proizvodi);
 }
 var nizMarki=[];
 var nizRamMem=[];
@@ -425,10 +422,7 @@ function filtriranjePoMarci(){
     upisiULocalStorage("filtriraniProizvodiPoMarci", proizvodiNovi);
     upisiULocalStorage("filtriraniProizvodi", proizvodiNovi);
     if(proizvodiNovi.length){
-        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
         ispisProizvoda(proizvodiNovi);
-        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-        ispisProizvoda2(proizvodiNovi);
     }else{
         nemaProizvoda();
     }
@@ -474,10 +468,7 @@ function filtriranjePoRamMem(){
         upisiULocalStorage("filtriraniProizvodiPoRamMem", proizvodiNovi);
     }
     if(proizvodiNovi.length){
-        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
         ispisProizvoda(proizvodiNovi);
-        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-        ispisProizvoda2(proizvodiNovi);
     }else{
         nemaProizvoda();
     }
@@ -523,10 +514,7 @@ function filtriranjePoIntMem(){
         upisiULocalStorage("filtriraniProizvodiPoIntMem", proizvodiNovi);
     }
     if(proizvodiNovi.length){
-        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
         ispisProizvoda(proizvodiNovi);
-        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-        ispisProizvoda2(proizvodiNovi);
     }else{
         nemaProizvoda();
     }
@@ -572,10 +560,7 @@ function filtriranjePoRezoluciji(){
     }
     upisiULocalStorage("filtriraniProizvodi", proizvodiNovi);
     if(proizvodiNovi.length){
-        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
         ispisProizvoda(proizvodiNovi);
-        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-        ispisProizvoda2(proizvodiNovi);
     }else{
         nemaProizvoda();
     }
@@ -599,10 +584,7 @@ function filtriranjeSearch(){
     }
     upisiULocalStorage("filtriraniProizvodi", proizvodi);
     if(proizvodi.length){
-        if(url.indexOf("telefoni.html")!=-1 || url.indexOf("tableti.html")!=-1)
         ispisProizvoda(proizvodi);
-        if(url.indexOf("dozTelefon.html")!=-1 || url.indexOf("dozTablet.html")!=-1)
-        ispisProizvoda2(proizvodi);
     }else{
         nemaProizvoda();
     }
