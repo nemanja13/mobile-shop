@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "tekst":"Početna",
+        "href":"index.html",
+        "roditelj_id":0
+    },
+    {
+        "id":2,
+        "tekst":"Telefonija",
+        "href":"#",
+        "roditelj_id":0
+    },
+    {
+        "id":3,
+        "tekst":"Mobilni telefoni",
+        "href":"#",
+        "roditelj_id":2
+    },
+    {
+        "id":4,
+        "tekst":"Smart telefoni",
+        "href":"telefoni.html",
+        "roditelj_id":3
+    },
+    {
+        "id":5,
+        "tekst":"Dodatna oprema za telefone",
+        "href":"dozTelefon.html",
+        "roditelj_id":3
+    },
+    {
+        "id":6,
+        "tekst":"Tablet računari",
+        "href":"#",
+        "roditelj_id":2
+    },
+    {
+        "id":7,
+        "tekst":"Tableti",
+        "href":"tableti.html",
+        "roditelj_id":6
+    },
+    {
+        "id":8,
+        "tekst":"Dodatna oprema za tablete",
+        "href":"dozTablet.html",
+        "roditelj_id":6
+    },
+    {
+        "id":9,
+        "tekst":"O nama",
+        "href":"index.html#oNama",
+        "roditelj_id":0
+    },
+    {
+        "id":10,
+        "tekst":"Kontakt",
+        "href":"index.html#kontakt",
+        "roditelj_id":0
+    },
+    {
+        "id":11,
+        "tekst":"Autor",
+        "href":"autor.html",
+        "roditelj_id":0
+    },
+    {
+        "id":11,
+        "tekst":"<i class='fas fa-shopping-cart'></i><span class='broj flex'></span>",
+        "href":"korpa.html",
+        "roditelj_id":0
+    }
+]

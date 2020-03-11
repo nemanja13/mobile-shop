@@ -31,7 +31,7 @@ img{
 #header{
     border-bottom: 1px solid rgb(187, 178, 178);
 }
-#header img{
+#header img, #autor{
     width: auto;
     height: auto;
 }
@@ -79,7 +79,7 @@ ul li a:hover{
     line-height: 1.4;
     display: block;
 }
-#header .korpa{
+#header ul:first-child> li:last-child> a{
     color: rgb(69, 133, 253);
     position: relative;
     padding: 10px;

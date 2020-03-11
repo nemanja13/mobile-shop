@@ -15,6 +15,8 @@ function podMeni(){
     });
     $("#podMeni ul a").click(function(){
         $(this).parent("li").children("ul").slideToggle("slow");
+        $(this).find("i").toggleClass("fas fa-angle-down");
+        $(this).find("i").toggleClass("fas fa-angle-up");
     });
 }
 function dodajUKorpu(e){
@@ -146,8 +148,7 @@ function brojProizvodaUKorpi(){
 }
 if(url.indexOf("index.html")!=-1){
     window.onload=function(){
-        podMeni();
-        brojProizvodaUKorpi();
+        prikazMenija();
         prikazSlajdera();
         oNama();
         $.ajax({
@@ -275,33 +276,32 @@ if(url.indexOf("index.html")!=-1){
     }
 }
 if(url.indexOf("telefoni.html")!=-1){
-    podMeni();
+    prikazMenija();
     tip("telefon");
     prikaziFilter();
-    brojProizvodaUKorpi();
 }
 if(url.indexOf("tableti.html")!=-1){
-    podMeni();
+    prikazMenija();
     tip("tablet");
     prikaziFilter();
-    brojProizvodaUKorpi();
 }
 if(url.indexOf("dozTelefon.html")!=-1){
-    podMeni();
-    tip2("dozTelefon");
+    prikazMenija();
+    tip("dozTelefon");
     prikaziFilter();
-    brojProizvodaUKorpi();
 }
 if(url.indexOf("dozTablet.html")!=-1){
-    podMeni();
-    tip2("dozTablet");
+    prikazMenija();
+    tip("dozTablet");
     prikaziFilter();
-    brojProizvodaUKorpi();
 }
 if(url.indexOf("korpa.html")!=-1){
-    podMeni();
+    prikazMenija();
     korpa();
-    brojProizvodaUKorpi();
+}
+
+if(url.indexOf("autor.html")!=-1){
+    prikazMenija();
 }
 function upisiULocalStorage(string, vrednost){
     if(localStorage){
@@ -622,37 +622,14 @@ function tip(tip){
                 upisiULocalStorage("proizvodi", proizvodi);
                 upisiULocalStorage("filtriraniProizvodiPoMarci", proizvodi);
                 ispisProizvoda(sviProizvodi());
-                inputCheckbox();
+                if(tip=="telefon" || tip=="tablet")
+                    inputCheckbox();
+                else
+                    inputCheckbox2();
                 $("input[name='robnaMarka']").click(filtriranjePoMarci);
                 $("input[name='ramMemorija']").click(filtriranjePoRamMem);
                 $("input[name='internaMemorija']").click(filtriranjePoIntMem);
                 $("input[name='rezolucija']").click(filtriranjePoRezoluciji);
-            },
-            error:function(err){
-                console.error(err);
-            }
-        });
-        document.getElementById("sortiraj").addEventListener("change", sortiraj);
-        document.getElementById("search").addEventListener("keyup", filtriranjeSearch);
-    }
-}
-function tip2(tip){
-    localStorage.removeItem("filtriraniProizvodiPoRamMem");
-    localStorage.removeItem("filtriraniProizvodiPoIntMem");
-    localStorage.removeItem("filtriraniProizvodiPoRez");
-    localStorage.removeItem("filtriraniProizvodi");
-    window.onload=function(){
-        $.ajax({
-            url: "data/proizvodi.json",
-            type:"GET",
-            dataType:"json",
-            success:function(data){
-                var proizvodi=data.filter(p=>p.tip==tip);
-                upisiULocalStorage("proizvodi", proizvodi);
-                upisiULocalStorage("filtriraniProizvodiPoMarci", proizvodi);
-                ispisProizvoda2(sviProizvodi());
-                inputCheckbox2();
-                $("input[name='robnaMarka']").click(filtriranjePoMarci);
             },
             error:function(err){
                 console.error(err);
@@ -668,40 +645,28 @@ function ispisProizvoda(proizvodi){
         ispis+=`
         <div class="col-lg-3 col-md-5 col-8  flex2 proizvod">
             <img src="${proizvod.slika.putanja}" alt="${proizvod.marka} ${proizvod.model} class="slikaProizvod">
-            <h3>${proizvod.marka} ${proizvod.model}</h3>
-            <ul>
-                <li>Ekran: ${proizvod.ekran}</li>
-                <li>RAM Memorija: ${proizvod.ramMemorija}</li>
-                <li>Interna Memorija: ${proizvod.internaMemorija}</li>
-                <li>Kamera: ${proizvod.kamera.zadnja}/${proizvod.kamera.prednja}</li>
-            </ul> 
-            <p class="naStanju"> Na stanju</p>
+            <h3>${proizvod.marka} ${proizvod.model}</h3>`;
+           
+            if(proizvod.tip=="telefon" || proizvod.tip=="tablet"){
+                ispis+=` 
+                <ul>
+                    <li>Ekran: ${proizvod.ekran}</li>
+                    <li>RAM Memorija: ${proizvod.ramMemorija}</li>
+                    <li>Interna Memorija: ${proizvod.internaMemorija}</li>
+                    <li>Kamera: ${proizvod.kamera.zadnja}/${proizvod.kamera.prednja}</li>
+                </ul> `;
+            }
+           
+            ispis+=`<p class="naStanju"> Na stanju</p>
             <del class="staraCena">${proizvod.cena.stara} RSD</del>
             <p class="usteda">ušteda ${usteda(proizvod.cena.stara,proizvod.cena.nova)} RSD</p>
             <h4 class="cena">${proizvod.cena.nova} RSD</h4>
             <a href="#" class="dodajUKorpu" data-id="${proizvod.id}"><i class="fas fa-shopping-cart"></i> Dodaj u korpu</a>
-        </div>`
+        </div>`;
     });
     document.getElementById("sadrzajProizvodi").innerHTML=ispis;
     $(".dodajUKorpu").click(dodajUKorpu);
     
-}
-function ispisProizvoda2(proizvodi){
-    let ispis="";
-    proizvodi.forEach(proizvod => {
-        ispis+=`
-        <div class="col-lg-3 col-md-5 col-8  flex2 proizvod">
-            <img src="${proizvod.slika.putanja}" alt="${proizvod.marka} ${proizvod.model} class="slikaProizvod">
-            <h3>${proizvod.marka} ${proizvod.model}</h3>
-            <p class="naStanju"> Na stanju</p>
-            <del class="staraCena">${proizvod.cena.stara} RSD</del>
-            <p class="usteda">ušteda ${usteda(proizvod.cena.stara,proizvod.cena.nova)} RSD</p>
-            <h4 class="cena">${proizvod.cena.nova} RSD</h4>
-            <a href="#" class="dodajUKorpu" data-id="${proizvod.id}"><i class="fas fa-shopping-cart"></i> Dodaj u korpu</a>
-        </div>`
-    });
-    document.getElementById("sadrzajProizvodi").innerHTML=ispis;
-    $(".dodajUKorpu").click(dodajUKorpu);
 }
 function inputCheckbox2(){
     let data=sviProizvodi();
@@ -847,4 +812,70 @@ $.ajax({
 function nemaProizvoda(){
     ispis="<div class='prazno flex'> <h1>Vaša pretraga nije dala rezultate. <i class='fas fa-search'></i></h1> </div>";
     document.getElementById("sadrzajProizvodi").innerHTML=ispis;
+}
+function prikazMenija(){
+    $.ajax({
+        url : "data/meni.json",
+        method : "GET",
+        dataType : "json",
+        success : function(data){
+            let prviNivo=data.filter(p=>p.roditelj_id==0);
+            let ispis="<ul>";
+            prviNivo.forEach(el => {
+                if(el.tekst=="Telefonija"){
+                    ispis+=`<li id="${el.tekst.toLowerCase()}"><a href="${el.href}">${el.tekst} <i class="fas fa-angle-down"></i></a></li>`;
+                }else{
+                    ispis+=`<li><a href="${el.href}">${el.tekst}</a></li>`;
+                }
+            });
+            ispis+="</ul>"
+            document.getElementById("meni").innerHTML=ispis;
+
+            let ispisPodMeni="<ul>";
+
+            data.forEach(el => { 
+                if(el.roditelj_id==0){
+                    if(prikazPodMenija(el.id))
+                        var strelica="<i class='fas fa-angle-down'></i>"
+                    else
+                        strelica="";
+                    ispisPodMeni+=`<li><a href="${el.href}">${el.tekst} ${strelica}</a>`;
+                    ispisPodMeni+=prikazPodMenija(el.id);
+                    ispisPodMeni+="</li>";
+                }
+            });
+            ispisPodMeni+="</ul>";
+            document.getElementById("podMeni").innerHTML=ispisPodMeni;
+            
+
+            function prikazPodMenija(id){
+                let drugiNivo=data.filter(p=>p.roditelj_id==id);
+                let ispisDrugiNivo="";
+                if(drugiNivo.length){
+                    ispisDrugiNivo+=`<ul class="nevidljiv pl-4">`
+                    drugiNivo.forEach(el => {
+                        if(prikazPodMenija(el.id))
+                            var strelica="<i class='fas fa-angle-down'></i>"
+                        else
+                            strelica="";
+                            ispisDrugiNivo+=`<li><a href="${el.href}">${el.tekst} ${strelica}</a>`;
+                            ispisDrugiNivo+=prikazPodMenija(el.id);
+                            ispisDrugiNivo+="</li>";
+                    });
+                    
+                    ispisDrugiNivo+=`</ul>`;
+                    
+                }
+                return ispisDrugiNivo;
+            }
+            podMeni();
+            brojProizvodaUKorpi();
+        },
+        error : function(err){
+            console.error(err);
+        }
+    });
+    
+
+    
 }

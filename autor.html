@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow"/>
-    <meta name="keywords" content="Mobile, Samsung, Huawei, Apple"/>
+    <meta name="keywords" content="Mobile, Nemanja, Maksimović"/>
     <meta name="author" content="Nemanja Maksimović"/>
     <meta name="description" content="Akcije i popusti, najbolja ponuda i najveći izbor telefona i tablet računara. Šok cene, akcije i uštede. Plaćanje na rate."/>
-    <title>Mobile shop</title>
+    <title>Mobile shop | Autor</title>
     <link rel="shortcut icon" href="images/icon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
@@ -56,81 +56,17 @@
             </div>
         </div>
     </div>
-    <div id="slajderKontejner" class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="strelicaLevo"><i class="fas fa-chevron-left"></i></div>
-            <div id="slajder">
-                
+            <div class="col-lg-6 col-md-6 mt-5">
+                <img src="images/profile.png" alt="Nemanja Maksimović" id="autor"/>
             </div>
-            <div class="strelicaDesno"><i class="fas fa-chevron-right"></i></div>
-        </div>
-    </div>
-    <div class="container-fluid" id="containerSadrzaj">
-        <div class="row">
-            <div class="col-12" id="najnovijeNajpopularnije">
-                <a href="#"><h2 id="najpopularnije" class="aktivan">Najpopularnije</h2></a><a href="#"><h2 id="najnovije">Najnovije</h2></a>
+            <div class="col-lg-6 col-md-6  my-auto mt-4 mr-auto p-5 align-text-middle">
+                <p>Zovem se Nemanja Maksimović, potičem iz jednog malog sela nadomak Grocke, student sam Visoke ICT škole, završio sam srednju ekonomsku školu u Grockoj,
+                     oduvek sam se interesovao za računare i modernu tehnologiju. Na taj način sam zavoleo programiranje i sebe vidim kao budućeg web programera.</p>                   
             </div>
         </div>
-        <div class="row flex3" id="sadrzaj">
-            
-        </div>
-    </div>
-    <div class="container-fluid" id="kompanija">
-    </div>
-    <div class="container-fluid" id="oNama">
-    </div>
-    <div class="container" id="kontakt">
-        <h2 class="podnaslov">Kontaktirajte Nas</h2>
-        <div class="row flex">       
-            <div class="col-12 col-md-5 blokKontakt">
-                <h3><i class="fas fa-desktop"></i> Kontaktirajte nas putem e-maila</h3>
-                <form id="formaKontakt" action="#" method="POST" onSubmit="return provera();">
-                    <label for="imePrezime">Ime i prezime</label>
-                    <input type="text" id="imePrezime" name="imePrezime"/>
-                    <span id="greskaImePrezime" class="greska">Pogresno uneto ime i prezime <br/> <i>Format (prvo veliko slovo, rec ne sme biti duza od 20 karaktera)</i></span>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email"/>
-                    <span id="greskaEmail" class="greska">Pogrešno unet email <br/> <i>Format (standardan format)</i></span>
-                    <label for="telefon">Telefon</label>
-                    <input type="text" id="telefon" name="telefon"/>
-                    <span id="greskaTelefon" class="greska">Pogrešan format <br/> <i>Format (06********, ukupno cifara 9/10)</i></span>
-                    <label for="razlogKontakta">Razlog kontakta</label>
-                    <select id="razlogKontakta" name="razlog">
-                        <option value="0">Izaberite</option>
-                        <option value="1">Prodaja</option>
-                        <option value="2">Isporuka robe</option>
-                        <option value="3">Reklamacije</option>
-                        <option value="4">Vaše primedbe i sugestije</option>
-                        <option value="5">Ostala pitanja</option>
-                    </select>
-                    <span id="greskaRazlogKontakta" class="greska">Morate izabrati razlog kontakta</span>
-                    <label for="poruka">Poruka</label>
-                    <textarea id="poruka"></textarea>
-                    <span id="greskaPoruka" class="greska">Morate uneti poruku</span>
-                    <input id="posalji" type="submit" value="Pošalji"/>
-                </form>
-            </div>
-            <div class="col-12 col-md-5 flex2 blokKontakt">
-                <div class="col-6">
-                    <h3><i class="fas fa-phone"></i> Pozovite</h3>
-                    <p>+38111 753 22 55</p>
-                    <p>+38111 753 22 66</p>
-                    <h4>Opšta podrška</h4>
-                    <p>Ponedeljak - Petak : 09h do 18h</p>
-                </div>
-                <div class="col-6">
-                    <h3><i class="fas fa-map-marker-alt"></i>  Lokacija</h3>
-                    <h4>Adresa:</h4>
-                    <p>Nemanjina 10</p>
-                    <h4>Servis Lokacije</h4>
-                    <p>Kneza Milana Obrenovića 14</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.7511505001744!2d20.457362115498128!3d44.806259879098754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa848ddc625%3A0x36e7d5f2cd3e83eb!2z0J3QtdC80LDRmtC40L3QsCAxMCwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1581967024124!5m2!1ssr!2srs" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
+    </div>    
     <div class="container-fluid" id="footer">
         <div class="row flex3">
             <div class="col-sm-4 col-md-3 mt-4">
