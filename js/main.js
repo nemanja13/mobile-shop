@@ -678,7 +678,7 @@ function provera(){
     let poruka= document.getElementById("poruka").value;
     let razlogKontakta= document.getElementById("razlogKontakta").value;
 
-    let regExpImePrezime=/^[A-Z][a-z]{2,19}(\s[A-Z][a-z]{2,19})+$/;
+    let regExpImePrezime=/^[A-ZČĆŠĐŽ][a-zčćšđž]{2,19}(\s[A-ZČĆŠĐŽ][a-zčćšđž]{2,19})+$/;
     let regExpEmail=/^[^@]+@[^@]+\.[^@\.]+$/;
     let regExpTelefon=/^06\d{7,8}$/;
     let regExpPoruka=/^[^@]+(\s[^@]+)*$/;
