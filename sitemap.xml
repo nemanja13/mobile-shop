@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<urlset xmlns="http://www.sitmaps.org/schemas/sitemap/0.9">
+		<url>
+			<loc>https://nemanja13.github.io/mobile-shop/index.html</loc>
+			<lastmod>2020-3-25</lastmod>
+			<changefreq>weekly</changefreq>
+			<priority>1</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/mobile-shop/telefoni.html</loc>
+			<lastmod>2020-3-25</lastmod>
+			<changefreq>weekly</changefreq>
+			<priority>0.9</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/mobile-shop/tableti.html</loc>
+			<lastmod>2020-3-25</lastmod>
+			<changefreq>weekly</changefreq>
+			<priority>0.9</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/mobile-shop/dozTelefon.html</loc>
+			<lastmod>2020-3-25</lastmod>
+			<changefreq>weekly</changefreq>
+			<priority>0.8</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/mobile-shop/dozTablet.html</loc>
+			<lastmod>2020-3-25</lastmod>
+			<changefreq>weekly</changefreq>
+			<priority>0.8</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/mobile-shop/korpa.html</loc>
+			<lastmod>2020-3-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.8</priority>
+		</url>
+		<url>
+			<loc>https://nemanja13.github.io/mobile-shop/autor.html</loc>
+			<lastmod>2020-3-25</lastmod>
+			<changefreq>yearly</changefreq>
+			<priority>0.8</priority>
+		</url>
+		
+	</urlset>
